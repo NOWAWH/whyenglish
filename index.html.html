@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Advanced English Revision</title>
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--ink:#1f2328;--mute:#666d76;--line:#e2e0d8;--acc:#2f5fd0;--ok:#1f8a4c;--bad:#c0392b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15171a;--card:#1e2126;--ink:#e8e9eb;--mute:#9aa0a8;--line:#2e3238;--acc:#7aa2ff;--ok:#4cc27f;--bad:#ff7b6b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#15171a;--card:#1e2126;--ink:#e8e9eb;--mute:#9aa0a8;--line:#2e3238;--acc:#7aa2ff;--ok:#4cc27f;--bad:#ff7b6b;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Georgia,"Times New Roman",serif}
+main{max-width:860px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:1.6rem;margin:0 0 4px}
+.sub{color:var(--mute);margin:0 0 16px;font-family:system-ui,sans-serif;font-size:.9rem}
+.tabs,.bar,.chips{display:flex;flex-wrap:wrap;gap:8px;font-family:system-ui,sans-serif}
+.tabs{border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:14px}
+button,input{font:inherit;font-family:system-ui,sans-serif;color:var(--ink)}
+button{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 14px;cursor:pointer}
+button.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.bar{align-items:center;margin-bottom:12px}
+input[type=search]{flex:1;min-width:160px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+.chips button{padding:4px 10px;font-size:.85rem;border-radius:99px}
+.prog{height:6px;background:var(--line);border-radius:9px;overflow:hidden;margin:6px 0 14px}
+.prog i{display:block;height:100%;background:var(--ok);width:0;transition:width .3s}
+.cnt{font-family:system-ui,sans-serif;font-size:.85rem;color:var(--mute)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px}
+.card.done{opacity:.6}
+.top{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.term{font-size:1.15rem;font-weight:700}
+.tag{font-family:system-ui,sans-serif;font-size:.72rem;color:var(--acc);border:1px solid var(--acc);border-radius:99px;padding:1px 8px;white-space:nowrap}
+.mean{margin:4px 0}
+.ex{color:var(--mute);font-style:italic;margin:0}
+.hide .ans{filter:blur(6px);cursor:pointer;user-select:none}
+.hide .ans.show{filter:none}
+.lrn{font-family:system-ui,sans-serif;font-size:.8rem;margin-top:8px;padding:3px 10px}
+.quiz{text-align:center;padding:26px 16px}
+.quiz .term{font-size:1.5rem}
+.quiz .row{display:flex;gap:10px;justify-content:center;margin-top:16px;flex-wrap:wrap}
+.ok{border-color:var(--ok);color:var(--ok)}.no{border-color:var(--bad);color:var(--bad)}
+:root{--g1:#ffe3f1;--g2:#dff3ff}@media(prefers-color-scheme:dark){:root:not([data-theme='light']){--g1:#2a1a33;--g2:#10263a}}:root[data-theme='dark']{--g1:#2a1a33;--g2:#10263a}body{font-family:'Avenir Next','Trebuchet MS',system-ui,sans-serif;background:linear-gradient(135deg,var(--g1),var(--g2)) fixed}h1{font-size:2.1rem;background:linear-gradient(90deg,#ff4d8d,#7a5cff,#00b3ff);-webkit-background-clip:text;background-clip:text;color:transparent}.card{border-width:2px;border-radius:16px;box-shadow:4px 4px 0 var(--line);transition:transform .15s}.card:hover{transform:translate(-2px,-2px) rotate(-.3deg)}button{border-radius:12px;border-width:2px;font-weight:600;transition:transform .1s}button:active{transform:scale(.94)}button.on{background:linear-gradient(90deg,#ff4d8d,#7a5cff);border-color:transparent;color:#fff}.tabs button{font-size:1rem}.prog{height:12px;border-radius:99px}.prog i{background:linear-gradient(90deg,#ffb300,#ff4d8d)}.meme{text-align:center;padding:20px 14px}.emo{font-size:4rem;line-height:1.1}.cap{font:900 1.35rem/1.15 Impact,'Arial Black',sans-serif;text-transform:uppercase;color:#fff;-webkit-text-stroke:1px #000;text-shadow:2px 2px 0 #000;background:#222;border-radius:10px;padding:10px;margin:8px 0}.clue{font-size:1.05rem}textarea,#fa{width:100%;padding:10px;border:2px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font:inherit}.res{border-radius:12px;padding:8px 12px;margin:10px 0;border:2px solid;text-align:left}.res.correct{border-color:var(--ok)}.res.close{border-color:#e0a800}.res.wrong{border-color:var(--bad)}
+</style>
+</head>
+<body>
+<main>
+<h1>🚀 English Boss Mode</h1>
+<p class="sub">Vocabulary · Grammar structures · Idioms &amp; phrasal verbs. Grind, quiz, flex. Progress is saved in this browser. 🔥</p>
+<div class="tabs" id="tabs"></div>
+<div class="bar">
+<input type="search" id="q" placeholder="Search…" aria-label="Search">
+<button id="hideBtn">Hide answers</button>
+<button id="quizBtn">Quiz me</button>
+<button id="unBtn">Unlearned only</button>
+<button id="resetBtn">Reset</button>
+</div>
+<div class="chips" id="chips"></div>
+<div class="prog"><i id="bar"></i></div>
+<div class="cnt" id="cnt"></div>
+<div id="list"></div>
+</main>
+<script>
+const D={
+vocab:{label:"Advanced words",items:[
+["ubiquitous","adj","present or found everywhere","Smartphones have become ubiquitous in modern life."],
+["ephemeral","adj","lasting a very short time","Fame can be ephemeral."],
+["meticulous","adj","showing great attention to detail","She kept meticulous records of every experiment."],
+["ambivalent","adj","having mixed or contradictory feelings","He felt ambivalent about moving abroad."],
+["pragmatic","adj","dealing with things sensibly and realistically","We need a pragmatic solution, not an ideal one."],
+["eloquent","adj","fluent and persuasive in speech or writing","Her eloquent speech moved the audience."],
+["scrutinise","verb","to examine very closely","Auditors scrutinised the accounts for errors."],
+["mitigate","verb","to make less severe or harmful","Trees help mitigate the effects of pollution."],
+["exacerbate","verb","to make a problem worse","Stress can exacerbate existing health problems."],
+["inevitable","adj","certain to happen; unavoidable","Delays were inevitable given the weather."],
+["plausible","adj","seeming reasonable or probable","His excuse sounded plausible but wasn’t true."],
+["resilient","adj","able to recover quickly from difficulties","Children are often remarkably resilient."],
+["candid","adj","truthful and straightforward","Let me be candid: the plan has flaws."],
+["arbitrary","adj","based on random choice, not reason","The rules seemed arbitrary and unfair."],
+["benevolent","adj","kind and generous","A benevolent donor funded the library."],
+["cynical","adj","distrustful of people’s motives","She is cynical about politicians’ promises."],
+["diligent","adj","careful and hard-working","A diligent student, he never missed a deadline."],
+["enigmatic","adj","mysterious and difficult to understand","The enigmatic smile of the portrait puzzled critics."],
+["fastidious","adj","very particular about accuracy and detail","He is fastidious about his appearance."],
+["gregarious","adj","fond of company; sociable","A gregarious host, she loved big parties."],
+["hinder","verb","to create obstacles for; hold back","Poor funding hindered the project’s progress."],
+["impartial","adj","treating all sides equally; fair","A judge must remain impartial."],
+["juxtapose","verb","to place side by side for contrast","The exhibition juxtaposes old and new photographs."],
+["lucid","adj","clearly expressed; easy to understand","He gave a lucid explanation of the theory."],
+["mundane","adj","dull; ordinary; everyday","She longed to escape her mundane routine."],
+["nuance","noun","a subtle difference in meaning or tone","The translation missed the nuances of the poem."],
+["obsolete","adj","no longer used; out of date","Floppy disks are now obsolete."],
+["pervasive","adj","spreading widely throughout","A pervasive sense of fear gripped the town."],
+["reluctant","adj","unwilling; hesitant","He was reluctant to admit his mistake."],
+["tenacious","adj","holding firmly; persistent","A tenacious negotiator, she never gave up."],
+["unprecedented","adj","never done or known before","The flood caused unprecedented damage."],
+["volatile","adj","liable to change suddenly; unstable","The market remains highly volatile."],
+["whimsical","adj","playfully quaint or fanciful","The café had a whimsical, fairy-tale design."],
+["alleviate","verb","to make suffering or a problem less severe","The medicine alleviated his pain."],
+["comprehensive","adj","covering all or nearly all aspects","The report offers a comprehensive review."],
+["detrimental","adj","causing harm or damage","Lack of sleep is detrimental to learning."],
+["feasible","adj","possible and practical to do","Is it feasible to finish by Friday?"],
+["abundant","adj","existing in large quantities","The region has abundant natural resources."],
+["adamant","adj","refusing to change one’s mind","She was adamant that she was right."],
+["aesthetic","adj","concerned with beauty or appearance","The design has great aesthetic appeal."],
+["ambiguous","adj","open to more than one interpretation","The ending of the novel is deliberately ambiguous."],
+["apprehensive","adj","anxious that something bad may happen","He felt apprehensive about the results."],
+["astute","adj","clever at judging situations to one’s advantage","An astute investor, she sold before the crash."],
+["audacious","adj","showing a willingness to take bold risks","It was an audacious plan to cross the desert."],
+["austere","adj","severe or plain; without luxury","They led an austere life in the mountains."],
+["bolster","verb","to support or strengthen","New evidence bolstered her argument."],
+["brevity","noun","concise and exact use of words; shortness","The brevity of his reply surprised us."],
+["coherent","adj","logical, consistent and easy to follow","She presented a coherent argument."],
+["compelling","adj","evoking interest or admiration; convincing","The film tells a compelling story."],
+["conspicuous","adj","easily seen; attracting attention","He was conspicuous by his absence."],
+["contentious","adj","causing or likely to cause disagreement","Immigration remains a contentious issue."],
+["convoluted","adj","extremely complex and difficult to follow","The plot was far too convoluted."],
+["credible","adj","able to be believed; trustworthy","There is no credible evidence for the claim."],
+["culminate","verb","to reach a final high point or result","Months of tension culminated in a strike."],
+["daunting","adj","seeming difficult and intimidating","The workload was daunting."],
+["deter","verb","to discourage from doing something","High prices deter many tourists."],
+["discrepancy","noun","a difference between things that should match","There was a discrepancy between the two accounts."],
+["dismantle","verb","to take apart; to abolish gradually","The government plans to dismantle the old system."],
+["elusive","adj","difficult to find, catch or achieve","Success remained elusive."],
+["empirical","adj","based on observation or experiment, not theory","The study provides empirical evidence."],
+["endeavour","noun/verb","a serious attempt; to try hard","She endeavoured to finish on time."],
+["ensue","verb","to happen afterwards, as a result","A heated debate ensued."],
+["equitable","adj","fair and impartial","They called for a more equitable distribution of wealth."],
+["erratic","adj","not even or regular; unpredictable","His behaviour became increasingly erratic."],
+["exemplify","verb","to be a typical example of","The building exemplifies modern design."],
+["formidable","adj","inspiring fear or respect through size or power","They faced a formidable opponent."],
+["frugal","adj","careful with money or food; economical","A frugal shopper, she always compares prices."],
+["futile","adj","incapable of producing any useful result","All efforts to save the company proved futile."],
+["hamper","verb","to hinder or impede","Bad weather hampered rescue efforts."],
+["hypothetical","adj","based on a possible situation, not a real one","Let’s consider a hypothetical scenario."],
+["impede","verb","to delay or block progress","Fallen trees impeded traffic."],
+["impetus","noun","the force that makes something happen or develop","The scandal gave impetus to reform."],
+["incentive","noun","something that motivates action","Tax breaks are an incentive to invest."],
+["indispensable","adj","absolutely necessary","A good dictionary is indispensable."],
+["inherent","adj","existing as a natural, permanent part","There are inherent risks in any investment."],
+["intricate","adj","very detailed and complicated","The carpet has an intricate pattern."],
+["lenient","adj","more merciful or tolerant than expected","The judge was surprisingly lenient."],
+["lucrative","adj","producing a great deal of profit","She left for a more lucrative career."],
+["meagre","adj","small in quantity and poor in quality","They survived on a meagre diet."],
+["notorious","adj","famous for something bad","The area is notorious for crime."],
+["obscure","adj","not well known; hard to understand","An obscure poet, he died unknown."],
+["ominous","adj","giving the impression something bad will happen","Ominous clouds gathered on the horizon."],
+["paramount","adj","more important than anything else","Safety is paramount."],
+["peculiar","adj","strange or odd; belonging particularly to","A peculiar smell filled the room."],
+["prevalent","adj","widespread in a particular area or time","Flu is prevalent in winter."],
+["profound","adj","very great or intense; showing deep insight","The book had a profound effect on me."],
+["prudent","adj","acting with care and thought for the future","It is prudent to save some money."],
+["rigorous","adj","extremely thorough and strict","All products undergo rigorous testing."],
+["scarce","adj","insufficient for the demand; rare","Water is scarce in the region."],
+["spontaneous","adj","done on impulse, without planning","Her spontaneous laughter broke the tension."],
+["stagnant","adj","showing no activity or growth","The economy has remained stagnant."],
+["subtle","adj","so delicate or precise as to be hard to notice","There is a subtle difference in meaning."],
+["tentative","adj","not certain or fixed; hesitant","We reached a tentative agreement."],
+["thrive","verb","to grow and develop well; to flourish","Small businesses thrive in the city."],
+["trivial","adj","of little value or importance","They argued over a trivial matter."],
+["undermine","verb","to weaken gradually","Constant criticism undermined her confidence."],
+["vulnerable","adj","exposed to the possibility of harm","Elderly people are especially vulnerable."],
+["wane","verb","to decrease gradually in strength","Public interest began to wane."],
+["wary","adj","cautious about possible dangers","Be wary of strangers offering deals."]
+]},
+grammar:{label:"Advanced grammar",items:[
+["Negative inversion","structure","After negative/restrictive adverbials at the start (never, rarely, hardly, no sooner, not only, under no circumstances), the auxiliary comes before the subject.","Never have I seen such a mess. / Not only did he lie, but he also cheated."],
+["Inverted conditionals","structure","Drop ‘if’ and invert: Should (open), Were (unreal), Had (past unreal). More formal.","Had I known, I would have called. / Should you need help, ask me. / Were she here, she’d agree."],
+["Mixed conditionals","structure","Past condition with present result: if + past perfect, would + base. Present condition with past result: if + past simple, would have + past participle.","If I had studied medicine, I would be a doctor now. / If he weren’t so lazy, he would have passed."],
+["Cleft sentences","structure","Emphasise one part with It is/was … that/who or What … is/was.","It was Maria who solved it. / What I need is a long holiday. / The reason why he left is unclear."],
+["Subjunctive","structure","Base form after verbs/adjectives of demand, suggestion, importance (insist, demand, recommend, essential, vital).","The manager insisted that he be present. / It is vital that she arrive early."],
+["Wish / If only","structure","Present regret: wish + past simple. Past regret: wish + past perfect. Annoyance/change: wish + would.","I wish I knew the answer. / If only I had listened. / I wish you would stop interrupting."],
+["Impersonal passive reporting","structure","It is said/believed/thought that … or subject + is said to + infinitive (perfect infinitive for earlier events).","He is said to be a genius. / The company is believed to have lost millions."],
+["Participle clauses","structure","Shorten clauses with -ing (active, same time), -ed (passive) or having + pp (earlier action).","Having finished the report, she left. / Built in 1890, the bridge is still in use."],
+["Causative have/get","structure","have/get + object + past participle for services done by someone else; have + object + base = instruct.","I had my car repaired. / She got her hair cut. / He had the staff work late."],
+["Future perfect (continuous)","tense","Future perfect: will have + pp (done before a time). Continuous: will have been + -ing (duration up to a time).","By June I will have finished the course. / By then she will have been working here for ten years."],
+["Emphatic do","structure","Do/does/did + base verb adds emphasis or contrast.","I do appreciate your help. / He did warn us."],
+["Inversion with so/such","structure","So + adjective + auxiliary + subject, or Such + be + noun, to emphasise degree.","So tired was she that she fell asleep. / Such was his anger that he left."],
+["Ellipsis and substitution","structure","Avoid repetition with so, not, do so, one/ones, or by omitting words.","‘Will it rain?’ ‘I hope not.’ / He asked me to leave, and I did so."],
+["Modals of deduction (past)","modal","must/can’t/may/might + have + pp to speculate about the past with different certainty.","She must have forgotten. / He can’t have seen us. / They might have left early."],
+["Advanced linkers","linker","Contrast: nevertheless, whereas, albeit. Result: consequently, hence. Concession: much as, however hard.","Albeit expensive, it was worth it. / Much as I admire her, I disagree."],
+["Nominalisation","style","Turn verbs/adjectives into nouns for a formal, academic tone.","The rapid increase in prices caused concern. (instead of: Prices increased rapidly.)"],
+["Relative clauses","structure","Defining clauses identify (no commas); non-defining add extra information (commas, no ‘that’). Use preposition + whom/which and whose in formal style.","The woman to whom I spoke was helpful. / My brother, who lives in Rome, is a chef. / The house whose roof collapsed was empty."],
+["Gerund vs infinitive","structure","Some verbs change meaning: remember/forget/stop/try/regret/go on + -ing (past or process) vs + to (future or purpose).","I remember locking the door. / Remember to lock the door. / He went on talking for an hour. / She went on to become a doctor."],
+["Used to / would / be used to","structure","used to + base = past habit or state; would = past habit only; be/get used to + -ing = accustomed.","I used to live in Paris. / We would play there every day. / I’m used to getting up early."],
+["Reporting verbs","structure","Choose the verb pattern: admit/deny/suggest + -ing; promise/refuse/offer + to-infinitive; accuse/blame + object + of/for -ing; insist/claim + that-clause.","She admitted taking the money. / He accused me of lying. / They promised to come."],
+["Passive with modals and get","structure","Modal + be + pp (present), modal + have been + pp (past). Get-passive is informal and often shows unexpected events.","The form must be signed. / It should have been done earlier. / He got fired last week."],
+["Advanced comparisons","structure","the + comparative … the + comparative; twice/three times as … as; by far the + superlative; not nearly as … as.","The harder you work, the more you earn. / It’s by far the best option. / This is twice as expensive as that."],
+["Concession clauses","structure","Although/though/even though, while, whereas, however + adj/adv, adjective + as + subject.","Hard as he tried, he failed. / However tired you are, you must finish."],
+["Purpose clauses","structure","so as (not) to / in order (not) to + base; so that / in order that + clause; lest (formal, subjunctive).","She left early so as not to miss the train. / He hid it lest anyone should find it."],
+["Unreal present and past","structure","It’s (high) time / would rather / as if / as though + past tense for unreal or hypothetical situations.","It’s time we left. / I’d rather you didn’t smoke. / He talks as if he knew everything."],
+["Hedging language","style","Soften claims in academic writing with seem, appear, tend to, may, it could be argued, to some extent.","The results appear to suggest a link. / It could be argued that the policy has failed."],
+["Locative inversion","structure","Place or direction expressions at the start of a sentence trigger inversion in literary or descriptive style.","On the table lay a letter. / Here comes the bus. / Out of the room ran the children."],
+["Continuous and perfect infinitives","structure","to be + -ing (happening now); to have + pp (earlier action); to have been + -ing (earlier, ongoing).","He seems to be working. / She claims to have met the president. / They appear to have been waiting for hours."]
+]},
+idioms:{label:"Idioms & phrasal verbs",items:[
+["a blessing in disguise","idiom","something bad that turns out good","Losing that job was a blessing in disguise."],
+["beat around the bush","idiom","avoid saying something directly","Stop beating around the bush and tell me."],
+["bite the bullet","idiom","face something unpleasant with courage","I’ll just bite the bullet and apologise."],
+["break the ice","idiom","ease tension at the start of a meeting","A joke helped break the ice."],
+["burn the midnight oil","idiom","work late into the night","She burned the midnight oil before the exam."],
+["call it a day","idiom","stop working for now","It’s late; let’s call it a day."],
+["cut corners","idiom","do something cheaply or carelessly","Never cut corners on safety."],
+["hit the nail on the head","idiom","describe exactly what is true","You hit the nail on the head."],
+["in the same boat","idiom","in the same difficult situation","We’re all in the same boat financially."],
+["jump on the bandwagon","idiom","join a popular trend","Many firms jumped on the bandwagon."],
+["let the cat out of the bag","idiom","reveal a secret by mistake","He let the cat out of the bag about the party."],
+["on the ball","idiom","alert and quick to understand","Our new manager is really on the ball."],
+["once in a blue moon","idiom","very rarely","We only meet once in a blue moon."],
+["the last straw","idiom","final problem that makes you lose patience","His rudeness was the last straw."],
+["piece of cake","idiom","very easy","The exam was a piece of cake."],
+["pull someone’s leg","idiom","joke by saying something untrue","Are you serious or pulling my leg?"],
+["spill the beans","idiom","reveal secret information","Come on, spill the beans!"],
+["under the weather","idiom","slightly ill","I’m feeling a bit under the weather."],
+["the ball is in your court","idiom","it’s your turn to act","I’ve made my offer; the ball is in your court."],
+["add insult to injury","idiom","make a bad situation worse","He was late, and to add insult to injury, blamed me."],
+["get cold feet","idiom","become nervous before something","She got cold feet before the wedding."],
+["go the extra mile","idiom","make more effort than expected","Our team always goes the extra mile."],
+["miss the boat","idiom","lose an opportunity","Apply now or you’ll miss the boat."],
+["take with a pinch of salt","idiom","not believe completely","Take his claims with a pinch of salt."],
+["back down","phrasal verb","withdraw from a position or argument","He refused to back down."],
+["break down","phrasal verb","stop working; lose control emotionally","The car broke down on the motorway."],
+["bring about","phrasal verb","cause to happen","The reforms brought about real change."],
+["bring up","phrasal verb","raise a topic; raise a child","She brought up the issue at the meeting."],
+["call off","phrasal verb","cancel","The match was called off due to rain."],
+["carry out","phrasal verb","perform; complete","Researchers carried out a survey."],
+["come across","phrasal verb","find by chance","I came across an old photo."],
+["come up with","phrasal verb","think of an idea or plan","She came up with a brilliant solution."],
+["cut down on","phrasal verb","reduce","Try to cut down on sugar."],
+["draw up","phrasal verb","prepare a document or plan","Lawyers drew up the contract."],
+["figure out","phrasal verb","understand or solve","I can’t figure out this puzzle."],
+["get away with","phrasal verb","escape punishment","He got away with cheating."],
+["get over","phrasal verb","recover from","It took her weeks to get over the flu."],
+["give in","phrasal verb","surrender; yield","The rebels refused to give in."],
+["hold up","phrasal verb","delay; rob","Traffic held us up for an hour."],
+["look into","phrasal verb","investigate","Police are looking into the matter."],
+["look up to","phrasal verb","admire","I look up to my grandmother."],
+["make up for","phrasal verb","compensate for","He bought flowers to make up for it."],
+["pass away","phrasal verb","die (polite)","Her grandfather passed away last year."],
+["point out","phrasal verb","draw attention to","She pointed out several errors."],
+["put off","phrasal verb","postpone; discourage","Don’t put off your revision."],
+["put up with","phrasal verb","tolerate","I can’t put up with the noise."],
+["run out of","phrasal verb","use up the supply of","We ran out of time."],
+["set up","phrasal verb","establish; arrange","They set up a charity in 2010."],
+["take after","phrasal verb","resemble a family member","She takes after her mother."],
+["take on","phrasal verb","accept (work); employ","The firm took on ten new staff."],
+["turn down","phrasal verb","reject; lower volume","He turned down the job offer."],
+["turn out","phrasal verb","prove to be; attend","It turned out to be a mistake."],
+["wear off","phrasal verb","gradually disappear","The effect of the drug wore off."],
+["work out","phrasal verb","solve; exercise; develop well","Things worked out in the end."],
+["a drop in the ocean","idiom","a very small amount compared with what is needed","The donation was just a drop in the ocean."],
+["Achilles’ heel","idiom","a weak point that can cause failure","Her Achilles’ heel is public speaking."],
+["barking up the wrong tree","idiom","pursuing a mistaken line of thought","If you blame me, you’re barking up the wrong tree."],
+["the best of both worlds","idiom","the benefits of two different things","Working from home gives you the best of both worlds."],
+["bite off more than you can chew","idiom","take on too much","I think I bit off more than I could chew."],
+["by the skin of your teeth","idiom","only just","She passed the exam by the skin of her teeth."],
+["cost an arm and a leg","idiom","be very expensive","That car cost an arm and a leg."],
+["cross that bridge when you come to it","idiom","deal with a problem only when it happens","Let’s cross that bridge when we come to it."],
+["every cloud has a silver lining","idiom","every bad situation has some good in it","Don’t be sad; every cloud has a silver lining."],
+["get out of hand","idiom","become uncontrollable","The party got out of hand."],
+["give someone the benefit of the doubt","idiom","believe someone’s innocence without proof","I’ll give him the benefit of the doubt."],
+["hit the roof","idiom","become very angry","Dad hit the roof when he saw the bill."],
+["in hot water","idiom","in trouble","He’s in hot water with his boss."],
+["kill two birds with one stone","idiom","achieve two things with one action","I killed two birds with one stone by shopping on the way home."],
+["leave no stone unturned","idiom","try every possible option","Police left no stone unturned in the search."],
+["make ends meet","idiom","earn just enough to live on","They struggled to make ends meet."],
+["on thin ice","idiom","in a risky situation","You’re on thin ice after missing that deadline."],
+["out of the blue","idiom","unexpectedly","She called me out of the blue."],
+["play it by ear","idiom","improvise as events happen","We have no plan; let’s play it by ear."],
+["read between the lines","idiom","understand an implied meaning","Reading between the lines, he’s unhappy."],
+["a rule of thumb","idiom","a rough practical guideline","As a rule of thumb, allow two hours."],
+["see eye to eye","idiom","agree completely","We rarely see eye to eye on politics."],
+["sit on the fence","idiom","avoid taking sides","Stop sitting on the fence and decide."],
+["throw in the towel","idiom","give up","After three failures, he threw in the towel."],
+["the tip of the iceberg","idiom","a small visible part of a much larger problem","These complaints are only the tip of the iceberg."],
+["a wild goose chase","idiom","a futile search","The tip sent us on a wild goose chase."],
+["the elephant in the room","idiom","an obvious problem nobody mentions","Money is the elephant in the room."],
+["back to square one","idiom","back to the beginning","The deal collapsed, so it’s back to square one."],
+["back up","phrasal verb","support; make a copy","The data backs up her theory."],
+["break out","phrasal verb","start suddenly (war, fire, disease)","War broke out in 1939."],
+["bring forward","phrasal verb","move to an earlier time","The meeting was brought forward to noon."],
+["build up","phrasal verb","increase gradually","A queue built up outside."],
+["call for","phrasal verb","demand; require","The crisis calls for immediate action."],
+["clamp down on","phrasal verb","act firmly to stop something","Police are clamping down on speeding."],
+["come down with","phrasal verb","become ill with","I think I’m coming down with a cold."],
+["count on","phrasal verb","rely on","You can count on me."],
+["do away with","phrasal verb","abolish","The school did away with uniforms."],
+["drop out","phrasal verb","leave a course or activity early","He dropped out of university."],
+["end up","phrasal verb","eventually be in a situation","We ended up walking home."],
+["fall through","phrasal verb","fail to happen","Our plans fell through."],
+["get across","phrasal verb","communicate an idea successfully","He struggled to get his point across."],
+["get by","phrasal verb","manage with difficulty","We get by on a small income."],
+["go through","phrasal verb","experience; examine carefully","She went through a difficult time."],
+["hand in","phrasal verb","submit","Hand in your essays by Monday."],
+["hold back","phrasal verb","restrain; hesitate","She held back her tears."],
+["keep up with","phrasal verb","stay at the same level or speed as","It’s hard to keep up with technology."],
+["let down","phrasal verb","disappoint","I won’t let you down."],
+["live up to","phrasal verb","meet expectations","The film didn’t live up to the hype."],
+["make out","phrasal verb","see or understand with difficulty","I couldn’t make out what he said."],
+["narrow down","phrasal verb","reduce the number of options","We narrowed the list down to three."],
+["pay off","phrasal verb","be successful; settle a debt","Her hard work paid off."],
+["pull off","phrasal verb","succeed in doing something difficult","They pulled off an amazing victory."],
+["rule out","phrasal verb","exclude as impossible","Doctors ruled out a heart problem."],
+["run into","phrasal verb","meet by chance; encounter","I ran into an old friend. / We ran into difficulties."],
+["see through","phrasal verb","recognise the truth behind a deception","I saw through his lies at once."],
+["sort out","phrasal verb","resolve; organise","We need to sort out this problem."],
+["stand for","phrasal verb","represent; tolerate","What does EU stand for? / I won’t stand for rudeness."],
+["stand out","phrasal verb","be clearly noticeable or better","Her talent made her stand out."],
+["step down","phrasal verb","resign from a position","The CEO stepped down last week."],
+["take over","phrasal verb","assume control","A new manager took over in May."],
+["turn up","phrasal verb","arrive; appear unexpectedly","He turned up an hour late."],
+["wind up","phrasal verb","end up; finish; annoy","He wound up in prison."],
+["write off","phrasal verb","dismiss as failed or worthless","Critics wrote him off too soon."],
+["launch an investigation","collocation","officially begin investigating","The police launched an investigation."],
+["reach a consensus","collocation","arrive at general agreement","The committee reached a consensus."],
+["pose a threat","collocation","be a danger","Pollution poses a threat to wildlife."],
+["bear in mind","collocation","remember and consider","Bear in mind that prices may rise."],
+["draw a conclusion","collocation","decide after considering the facts","It’s too early to draw a conclusion."],
+["raise awareness","collocation","make people more informed about an issue","The campaign raised awareness of recycling."],
+["take into account","collocation","consider when making a decision","We must take cost into account."],
+["meet a deadline","collocation","finish by the required time","She struggled to meet the deadline."],
+["foster a sense of","collocation","encourage the development of a feeling","Sport fosters a sense of community."],
+["wield power","collocation","hold and use authority","The media wields enormous power."]
+]}};
+const keys=Object.keys(D);let sec=keys[0],tag="All",unOnly=false,hide=false,quiz=false,qCur=null,done={};
+try{done=JSON.parse(localStorage.getItem("eng-done")||"{}")}catch(e){}
+const $=id=>document.getElementById(id);
+const save=()=>{try{localStorage.setItem("eng-done",JSON.stringify(done))}catch(e){}};
+const k=(s,t)=>s+"|"+t[0];
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+function items(){const q=$("q").value.toLowerCase();return D[sec].items.filter(t=>(tag=="All"||t[1]==tag)&&(!unOnly||!done[k(sec,t)])&&(!q||t.join(" ").toLowerCase().includes(q)))}
+function render(){
+$("tabs").innerHTML=keys.map(s=>`<button class="${s==sec?"on":""}" data-s="${s}">${D[s].label}</button>`).join("");
+const tags=["All",...new Set(D[sec].items.map(t=>t[1]))];
+$("chips").innerHTML=tags.length>2?tags.map(t=>`<button class="${t==tag?"on":""}" data-t="${t}">${t}</button>`).join(""):"";
+const all=D[sec].items,n=all.filter(t=>done[k(sec,t)]).length;
+$("bar").style.width=(100*n/all.length)+"%";
+$("cnt").textContent=n+" of "+all.length+" learned";
+$("hideBtn").className=hide?"on":"";$("unBtn").className=unOnly?"on":"";$("quizBtn").className=quiz?"on":"";
+$("hideBtn").textContent=hide?"Show answers":"Hide answers";
+if(quiz)return renderQuiz();
+const l=items();
+$("list").className=hide?"hide":"";
+$("list").innerHTML=l.length?l.map(t=>{const d=done[k(sec,t)];return `<div class="card ${d?"done":""}"><div class="top"><span class="term">${esc(t[0])}</span><span class="tag">${t[1]}</span></div><div class="ans"><p class="mean">${esc(t[2])}</p><p class="ex">${esc(t[3])}</p></div><button class="lrn" data-k="${esc(k(sec,t))}">${d?"✓ Learned (undo)":"Mark as learned"}</button></div>`}).join(""):'<p class="cnt">Nothing to show.</p>';
+}
+function nextQ(){const p=items().filter(t=>!done[k(sec,t)]);const pool=p.length?p:items();qCur=pool.length?pool[Math.floor(Math.random()*pool.length)]:null;qShow=false}
+let qShow=false;
+function renderQuiz(){
+$("list").className="";
+if(!qCur||!items().includes(qCur))nextQ();
+if(!qCur){$("list").innerHTML='<p class="cnt">Nothing to quiz.</p>';return}
+const t=qCur;
+$("list").innerHTML=`<div class="card quiz"><span class="tag">${t[1]}</span><p class="term">${esc(t[0])}</p>${qShow?`<p class="mean">${esc(t[2])}</p><p class="ex">${esc(t[3])}</p><div class="row"><button class="ok" id="gotIt">Got it</button><button class="no" id="again">Again</button></div>`:`<div class="row"><button id="reveal">Show answer</button></div>`}</div>`;
+}
+document.addEventListener("click",e=>{
+const b=e.target.closest("button,.ans");if(!b)return;
+if(b.dataset.s){sec=b.dataset.s;tag="All";qCur=null}
+else if(b.dataset.t){tag=b.dataset.t;qCur=null}
+else if(b.dataset.k){done[b.dataset.k]=!done[b.dataset.k];save()}
+else if(b.classList.contains("ans")){b.classList.toggle("show");return}
+else if(b.id=="hideBtn")hide=!hide;
+else if(b.id=="unBtn"){unOnly=!unOnly;qCur=null}
+else if(b.id=="quizBtn"){quiz=!quiz;qCur=null}
+else if(b.id=="reveal")qShow=true;
+else if(b.id=="gotIt"){done[k(sec,qCur)]=true;save();nextQ()}
+else if(b.id=="again")nextQ();
+else if(b.id=="resetBtn"){if(confirm("Clear all progress?")){done={};save()}}
+render()});
+$("q").addEventListener("input",()=>{qCur=null;render()});
+render();
+</script>
+<script>
+D.vocab.label='📖 Advanced words';D.grammar.label='🧩 Advanced grammar';D.idioms.label='💬 Idioms & phrasal verbs';
+D.flash={label:'🎴 Meme flashcards',items:[
+['spill the beans','idiom','bestie leaked ALL the tea to the group chat and nobody even asked 💀','me keeping a secret: 0.2 seconds','☕🫘'],
+['piece of cake','idiom','that exam? ez. I cooked, left no crumbs, zero stress, tutorial-level difficulty','difficulty: tutorial level','🍰'],
+['under the weather','idiom','not it today, immune system on airplane mode, sniffles era','my body: error 404 energy not found','🤒'],
+['break the ice','idiom','awkward silence at the party until someone drops a meme and suddenly everyone is vibing','nobody talking... then: nice shoes','🧊'],
+['the elephant in the room','idiom','everyone sees it, nobody says it, the group project is cooked and we’re all just… quiet','pov: the group chat went silent','🐘'],
+['bite the bullet','idiom','time to stop procrastinating and do the scary thing, no cap, it’s happening','me opening the homework I avoided','😬'],
+['hit the nail on the head','idiom','you said EXACTLY what I was thinking, 100% accurate, ratio’d by facts','that’s it. that’s the tweet.','💯'],
+['once in a blue moon','idiom','happens almost never, rarer than a teacher giving no homework','rarer than a shiny pokémon','🌕'],
+['pull someone’s leg','idiom','jk jk I’m just messing with you, it was a prank, calm down','it’s just a prank, bro','🤡'],
+['cost an arm and a leg','idiom','bro that price tag is wallet-destroying, my bank account is crying rn','bank account: please stop','💸'],
+['let the cat out of the bag','idiom','accidentally revealed the surprise party plan, plot leaked, we’re cooked','oops I spoiled the season finale','🐱'],
+['the last straw','idiom','I put up with it, and again, and AGAIN, and then THIS?? patience at 0%','my patience: 1% battery','🪫'],
+['on thin ice','idiom','one more late assignment and I’m toast, teacher is already side-eyeing me','one more slip and it’s over','😰'],
+['go the extra mile','idiom','did way more than required, main-character effort, bonus DLC unlocked','bare minimum? nah, DLC unlocked','🏃'],
+['get cold feet','idiom','was SO ready, then right before the big moment: lowkey panicking','confidence: loading... failed','🥶'],
+['a blessing in disguise','idiom','got rejected from one thing and ended up with something WAY better, universe said plot twist','plot twist: the L was actually a W','🎁'],
+['sit on the fence','idiom','can’t pick a side, ‘both are valid’, stuck in neutral','me choosing pizza toppings','🤷'],
+['wild goose chase','idiom','ran all over town for something that doesn’t even exist, got played by a trust-me-bro map','following a trust-me-bro map','🪿'],
+['call it a day','idiom','brain.exe stopped working, I’m logging off, see you tomorrow','my brain at 11pm: that’s enough','🌙'],
+['burn the midnight oil','idiom','studying at 2am, energy drink on the desk, grinding like it’s finals season','2am. still studying. send help.','🕯️'],
+['put up with','phrasal verb','tolerating my sibling’s loud music even though it’s driving me crazy, just surviving','tolerating them: speedrun','🔊'],
+['look up to','phrasal verb','that person is my role model, literally my idol, I want their aura','my role model: s-tier','⭐'],
+['turn down','phrasal verb','crush asked me out and I said nah, rejected the offer, sorry not sorry','denied. next.','🚫'],
+['come up with','phrasal verb','big brain moment: invented the idea in the shower and now I’m a genius','shower thoughts hit different','💡'],
+['run out of','phrasal verb','wifi, battery, snacks: all gone, resource bar at zero','my phone battery: 1%','🔋'],
+['get over','phrasal verb','it hurt at first but I’m healed and moved on, healing arc complete','healing arc: complete','💔'],
+['figure out','phrasal verb','took forever but I finally solved the puzzle, brain cell activated','brain cell: found','🧩'],
+['let down','phrasal verb','you promised to come and ghosted me, I’m disappointed, big sad','you promised...','😔'],
+['live up to','phrasal verb','the hype was insane, but did the movie actually meet the expectations?','expectation vs reality','🎬'],
+['ubiquitous','word','literally everywhere, can’t escape it, like that one trending sound on your FYP','it’s in your fyp and your head 24/7','📱'],
+['ephemeral','word','here for 24 hours then gone, insta story energy, no receipts','insta story after 24h: deleted','⏳'],
+['meticulous','word','double-checking EVERY tiny detail, colour-coded notes, perfectionist final boss','my notes: colour-coded spreadsheet','🔍'],
+['ambivalent','word','I love it. I hate it. I feel both. brain is buffering with mixed feelings','mixed feelings.exe','🙃'],
+['cynical','word','‘oh sure, it’s free… what’s the catch?’ trust issues but make it a personality','suspicious of everything','🤨'],
+['resilient','word','got knocked down, got back up, bounce-back arc, can’t keep me down','fails exam, tries again: bounce','🏋️'],
+['volatile','word','mood changes faster than wifi, one second chill, next second explosion','crypto energy: up down up down','📉'],
+['tenacious','word','won’t quit, clings like glue, refuses to lose, goat persistence','bulldog with a goal','🐕'],
+['mundane','word','boring ordinary tuesday, same routine, NPC daily life, nothing happening','tuesday: nothing happened','😐'],
+['scrutinise','word','looking at it so closely like a detective, checking every pixel, zoom and enhance','zoom. enhance. enhance.','🕵️']
+]};keys.push('flash');
+D.vocab.items.push(['ostentatious','adj','showy, designed to impress others','His ostentatious mansion annoyed the neighbours.'],['prolific','adj','producing a lot of work or offspring','A prolific writer, she published 40 novels.'],['reticent','adj','reluctant to share thoughts or feelings','He was reticent about his past.'],['sceptical','adj','doubtful that something is true','I’m sceptical about the claims.'],['ardent','adj','very enthusiastic or passionate','An ardent supporter of the team.'],['brazen','adj','bold and shameless','A brazen lie.'],['capricious','adj','given to sudden, unpredictable changes of mood','The capricious weather ruined our plans.'],['cumbersome','adj','large and heavy; slow and complicated','The process is cumbersome.'],['dubious','adj','hesitating or doubting; of questionable value','A dubious claim.'],['eccentric','adj','unconventional and slightly strange','An eccentric professor in mismatched socks.'],['exuberant','adj','full of energy and excitement','Exuberant crowds filled the streets.'],['frivolous','adj','not serious; silly','A frivolous lawsuit.'],['impeccable','adj','faultless','Her manners are impeccable.'],['inadvertent','adj','not intentional','An inadvertent error.'],['jeopardise','verb','to put at risk','Delays could jeopardise the project.'],['lament','verb','to express sorrow or regret','He lamented the loss of his youth.'],['magnanimous','adj','generous and forgiving','A magnanimous winner.'],['nostalgic','adj','longing for the past','The song made her nostalgic.'],['pinnacle','noun','the highest point of success','The pinnacle of his career.'],['quaint','adj','attractively old-fashioned','A quaint village.'],['resolute','adj','firmly determined','She remained resolute.'],['sublime','adj','of great beauty or excellence','A sublime view.'],['trepidation','noun','fear about something to come','He opened the letter with trepidation.'],['unanimous','adj','agreed by everyone','A unanimous decision.']);
+D.idioms.items.push(['the icing on the cake','idiom','an extra good thing on top of something already good','Winning was great; the bonus was the icing on the cake.'],['hold your horses','idiom','wait; slow down','Hold your horses, we haven’t decided yet.'],['throw caution to the wind','idiom','take a big risk without worrying','He threw caution to the wind and quit.'],['get the ball rolling','idiom','start a process','Let’s get the ball rolling with introductions.'],['a chip on your shoulder','idiom','a feeling of resentment','He has a chip on his shoulder about school.'],['jump the gun','idiom','act too soon','Don’t jump the gun; wait for the results.'],['keep your chin up','idiom','stay cheerful in difficulty','Keep your chin up; things will improve.'],['a hot potato','idiom','a controversial issue nobody wants to handle','Tax is a political hot potato.'],['pull strings','idiom','use influence to get something','He pulled strings to get her the job.'],['steal the show','idiom','attract the most attention','The young singer stole the show.'],['turn a blind eye','idiom','deliberately ignore wrongdoing','Teachers turned a blind eye to it.'],['water under the bridge','idiom','past events no longer important','Our argument is water under the bridge.'],['a taste of your own medicine','idiom','treatment you gave to others','He got a taste of his own medicine.'],['brush up on','phrasal verb','improve existing knowledge','I need to brush up on my grammar.'],['catch up with','phrasal verb','reach the same level or position','She worked to catch up with the class.'],['fall out with','phrasal verb','quarrel and stop being friends','He fell out with his brother.'],['give away','phrasal verb','reveal; give for free','His smile gave him away.'],['look forward to','phrasal verb','anticipate with pleasure (+ -ing)','I look forward to meeting you.'],['own up to','phrasal verb','admit responsibility','He owned up to the mistake.'],['show up','phrasal verb','arrive; appear','She didn’t show up.'],['take up','phrasal verb','start a hobby; occupy space or time','He took up chess.']);
+D.grammar.items.push(['Prepositions after adjectives','structure','Fixed pairs: good at, keen on, capable of, fond of, aware of, sceptical about, tired of, responsible for.','She is capable of great things. / I’m not keen on that idea.'],['Word formation','style','Use prefixes/suffixes to change word class: -ment, -ness, -ify, -ive, un-, mis-, over-.','Employ → employment → unemployed. / Able → inability → enable.'],['Articles (advanced)','structure','Zero article for general plurals/uncountables; the for unique or specified things; a/an for first mention.','Life is short. / The moon is bright. / I saw a film; the film was great.'],['Subject–verb agreement','structure','Collective nouns, either/neither, and quantity phrases can take singular or plural verbs.','The team is/are winning. / Neither of them was there. / A number of students are absent.']);
+const oldRender=render;let qRes=null,qIn='',fIn='',fi=0,fRes=null,fHint=0,xp=0,streak=0,busy=false,lastSec=sec;
+try{xp=+localStorage.getItem('eng-xp')||0}catch(e){}
+const sx=()=>{try{localStorage.setItem('eng-xp',xp)}catch(e){}};
+const norm=s=>s.toLowerCase().replace(/[’']/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
+const STOP=new Set('the a an to of and or is are be in on it that this for with as by your you someone something'.split(' '));
+const toks=s=>norm(s).split(' ').filter(w=>w&&!STOP.has(w)).map(w=>w.slice(0,5));
+const local=(a,r)=>{a=toks(a);r=new Set(toks(r));return a.length?a.filter(w=>r.has(w)).length/a.length:0};
+const flashOk=(g,ans)=>{const a=toks(ans),s=new Set(toks(g));return a.length>0&&a.every(w=>s.has(w))};
+async function getSample(){try{return window.claude&&claude.use?await claude.use('sample'):null}catch(e){return null}}
+async function grade(t,ans){const s=await getSample();
+if(s){try{const r=await s.json('You mark an advanced English quiz. Item: ‘'+t[0]+'’ ('+t[1]+'). Reference meaning: '+t[2]+'. Example: '+t[3]+'. Student answer: ‘'+ans+'’. Accept answers that express the same idea in different words, valid synonyms, or a correct usage example. Mark vague, partial or wrong answers accordingly. Reply ONLY with JSON having two keys: verdict (one of correct, close, wrong) and feedback (one short friendly sentence).');if(r&&r.verdict)return{v:r.verdict,f:r.feedback||''}}catch(e){}}
+const sc=local(ans,t[2]+' '+t[3]);return{v:sc>=.5?'correct':sc>=.25?'close':'wrong',f:'Offline check by word overlap (AI grading unavailable).'}}
+nextQ=function(){const p=items().filter(t=>!done[k(sec,t)]);const pool=p.length?p:items();qCur=pool.length?pool[Math.floor(Math.random()*pool.length)]:null;qRes=null;qIn=''};
+renderQuiz=function(){const L=$('list');L.className='';if(sec=='flash')return renderFlash(L);
+if(!qCur||(!qRes&&!items().includes(qCur)))nextQ();
+if(!qCur){L.innerHTML='<p class=\'cnt\'>Nothing to quiz.</p>';return}
+const t=qCur,v=qRes;
+L.innerHTML='<div class=\'card quiz\'><span class=\'tag\'>'+t[1]+'</span><p class=\'term\'>'+esc(t[0])+'</p><p class=\'cnt\'>Explain it in your own words. Similar meanings count! 🧠</p>'+(v?'<div class=\'res '+v.v+'\'><b>'+(v.v=='correct'?'✅ Nailed it':v.v=='close'?'🟡 Close':'❌ Not quite')+'</b> '+esc(v.f)+'</div><p class=\'mean\'><b>Reference:</b> '+esc(t[2])+'</p><p class=\'ex\'>'+esc(t[3])+'</p><div class=\'row\'><button class=\'on\' data-x=\'qnext\'>Next ➜</button></div>':'<textarea id=\'qa\' rows=\'2\' placeholder=\'Type your answer…\'>'+esc(qIn)+'</textarea><div class=\'row\'><button class=\'on\' data-x=\'qcheck\'>'+(busy?'Checking…':'Check')+'</button><button data-x=\'qskip\'>Skip</button></div>')+'</div>'};
+function renderFlash(L){const l=items();if(!l.length){L.innerHTML='<p class=\'cnt\'>No cards match.</p>';return}
+if(fi>=l.length)fi=0;const t=l[fi],ans=t[0];
+const hint=fHint?'Hint: '+ans.split('').map((c,i)=>i<fHint||c==' '?c:'•').join(''):'';
+L.innerHTML='<div class=\'card meme\'><span class=\'tag\'>'+t[1]+'</span><div class=\'emo\'>'+t[4]+'</div><div class=\'cap\'>'+esc(t[3])+'</div><p class=\'clue\'>'+esc(t[2])+'</p>'+(fRes?'<div class=\'res '+(fRes=='ok'?'correct':'wrong')+'\'><b>'+(fRes=='ok'?'W 🔥 +15 XP':'L 💀 it was:')+'</b> '+esc(ans)+'</div><div class=\'row\'><button class=\'on\' data-x=\'fnext\'>Next card ➜</button></div>':'<p class=\'cnt\'>'+hint+'</p><input id=\'fa\' placeholder=\'Guess the '+t[1]+'…\' autocomplete=\'off\' value=\''+esc(fIn).replace(/'/g,'&#39;')+'\'><div class=\'row\'><button class=\'on\' data-x=\'fcheck\'>Guess</button><button data-x=\'fhint\'>💡 Hint</button><button data-x=\'freveal\'>Give up</button></div>')+'<div class=\'cnt\'>🔥 streak '+streak+' · ⭐ '+xp+' XP · card '+(fi+1)+'/'+l.length+'</div></div>'}
+render=function(){if(lastSec!=sec){lastSec=sec;fRes=null;fIn='';fHint=0;fi=0}
+if(sec=='flash'){const q=quiz;quiz=true;oldRender();quiz=q;$('hideBtn').style.display='none'}else{oldRender();$('hideBtn').style.display=quiz?'none':''}};
+document.addEventListener('input',e=>{if(e.target.id=='qa')qIn=e.target.value;if(e.target.id=='fa')fIn=e.target.value});
+document.addEventListener('keydown',e=>{if(e.key=='Enter'&&!e.shiftKey&&(e.target.id=='fa'||e.target.id=='qa')){e.preventDefault();document.querySelector(e.target.id=='fa'?'[data-x=fcheck]':'[data-x=qcheck]').click()}});
+document.addEventListener('click',async e=>{const b=e.target.closest('[data-x]');if(!b)return;e.stopImmediatePropagation();const x=b.dataset.x;
+if(x=='qcheck'){const a=qIn.trim();if(!a||busy)return;busy=true;renderQuiz();const t=qCur;const r=await grade(t,a);busy=false;qRes=r;if(r.v=='correct'){done[k(sec,t)]=true;save();xp+=10;sx()}render();return}
+if(x=='qnext'||x=='qskip')nextQ();
+if(x=='fcheck'){const t=items()[fi];if(!fIn.trim())return;if(flashOk(fIn,t[0])){fRes='ok';xp+=15;streak++;done[k(sec,t)]=true;save();sx()}else{fRes='no';streak=0}}
+if(x=='freveal'){fRes='no';streak=0}
+if(x=='fhint')fHint++;
+if(x=='fnext'){fi=Math.floor(Math.random()*items().length);fRes=null;fIn='';fHint=0}
+render()},true);
+$('quizBtn').textContent='🧠 AI quiz';render();
+</script>
+<script>
+D.wf={label:'🔤 Word formation',items:[
+['decide','word family','decision (n) · decisive (adj) · decisively (adv) · indecisive (adj)','The committee reached a decisive verdict.'],
+['create','word family','creation (n) · creator (n) · creativity (n) · creative (adj) · creatively (adv)','Her creativity impressed the judges.'],
+['produce','word family','production (n) · productivity (n) · product (n) · productive (adj) · unproductive (adj)','Productivity has risen sharply.'],
+['differ','word family','difference (n) · different (adj) · differently (adv) · differentiate (v) · indifferent (adj)','There is a marked difference between the two.'],
+['compete','word family','competition (n) · competitor (n) · competitive (adj) · competitively (adv)','The market is highly competitive.'],
+['succeed','word family','success (n) · successful (adj) · successfully (adv) · succession (n) · unsuccessful (adj)','She successfully defended her thesis.'],
+['economy','word family','economic (adj) · economical (adj) · economist (n) · economise (v) · economically (adv)','An economical car saves petrol.'],
+['expect','word family','expectation (n) · expectancy (n) · expected (adj) · unexpected (adj) · unexpectedly (adv)','The result was entirely unexpected.'],
+['imagine','word family','imagination (n) · imaginative (adj) · imaginary (adj) · unimaginable (adj)','An imaginative solution to the problem.'],
+['employ','word family','employment (n) · employer (n) · employee (n) · unemployed (adj) · unemployment (n)','Unemployment fell last year.'],
+['persuade','word family','persuasion (n) · persuasive (adj) · persuasively (adv) · unpersuasive (adj)','A persuasive argument won them over.'],
+['attract','word family','attraction (n) · attractive (adj) · attractively (adv) · unattractive (adj)','The city’s main attraction is its old town.'],
+['behave','word family','behaviour (n) · behavioural (adj) · misbehave (v) · well-behaved (adj)','Behavioural changes appeared early.'],
+['vary','word family','variety (n) · variation (n) · various (adj) · variable (adj) · invariably (adv)','Prices vary from shop to shop.'],
+['strong','word family','strength (n) · strengthen (v) · strongly (adv) · stronghold (n)','Exercise strengthens the heart.'],
+['wide','word family','width (n) · widen (v) · widely (adv) · widespread (adj) · wideness (n)','The road was widened last year.'],
+['deep','word family','depth (n) · deepen (v) · deeply (adv) · deep-rooted (adj)','The crisis deepened over the winter.'],
+['act','word family','action (n) · activity (n) · active (adj) · activate (v) · actively (adv) · inactive (adj)','She is actively involved in charity.'],
+['depend','word family','dependence (n) · dependant (n) · dependent (adj) · dependable (adj) · independent (adj)','He is dependable and honest.'],
+['apply','word family','application (n) · applicant (n) · applicable (adj) · appliance (n)','Strong applicants are shortlisted.'],
+['reside','word family','residence (n) · resident (n) · residential (adj) · residue (n)','A quiet residential area.'],
+['assess','word family','assessment (n) · assessor (n) · assessable (adj) · reassess (v)','Continuous assessment replaces exams.'],
+['sense','word family','sensation (n) · sensitivity (n) · sensible (adj) · sensitive (adj) · senseless (adj)','A sensible, sensitive reply.'],
+['danger','word family','endanger (v) · dangerous (adj) · dangerously (adv) · endangered (adj)','Endangered species need protection.']
+]};
+D.trans={label:'✍️ Rewrite sentences',items:[
+['No sooner … than','rewrite','Inversion with past perfect after ‘No sooner’; ‘Hardly/Scarcely … when’ works the same way.','As soon as she left, it rained. → No sooner had she left than it rained.'],
+['Not until','rewrite','Not until + time clause, then auxiliary + subject.','He didn’t realise until later. → Not until later did he realise.'],
+['Only when / Only after','rewrite','Inversion in the main clause after the ‘Only…’ phrase.','She understood only then. → Only then did she understand.'],
+['too / enough','rewrite','too + adj + (for sb) + to V; adj + enough + to V.','The tea was so hot that I couldn’t drink it. → The tea was too hot to drink.'],
+['so … that / such … that','rewrite','so + adj/adv + that; such + (a/an) + adj + noun + that.','It was such a good film that we saw it twice. → The film was so good that we saw it twice.'],
+['although → despite','rewrite','Despite/In spite of + noun/-ing/the fact that + clause.','Although it rained, we went out. → Despite the rain, we went out.'],
+['unless / if not','rewrite','Unless = if … not; don’t add a second negative.','If you don’t hurry, you’ll miss it. → Unless you hurry, you’ll miss it.'],
+['would rather / prefer','rewrite','prefer A to B; would rather A than B; would rather + sb + past simple.','I prefer tea to coffee. → I’d rather have tea than coffee.'],
+['It’s (high) time','rewrite','It’s time + sb + past simple (unreal present).','We should leave now. → It’s time we left.'],
+['last time / first time','rewrite','Link past events with present perfect: haven’t … since/for; first time + present perfect.','I last saw him in May. → I haven’t seen him since May.'],
+['Impersonal passive','rewrite','It is said/believed that … or sb is said to + infinitive.','People say he is rich. → He is said to be rich.'],
+['Causative','rewrite','have/get + object + past participle.','A mechanic repaired my car. → I had my car repaired.'],
+['Reported suggestions','rewrite','suggest + -ing / that + (should) + base; advise sb to V.','‘Why don’t you rest?’ she said. → She suggested that I (should) rest.'],
+['Comparisons','rewrite','not as … as ↔ comparative + than; reverse the subjects to keep meaning.','He isn’t as tall as his brother. → His brother is taller than he is.'],
+['Inverted conditionals','rewrite','Had / Were / Should + subject replaces If.','If I had known, I would have helped. → Had I known, I would have helped.'],
+['needn’t have','rewrite','needn’t have + pp = did something unnecessary.','It wasn’t necessary for you to come. → You needn’t have come.'],
+['wish / regret','rewrite','I’m sorry I didn’t ↔ I wish I had + pp.','I’m sorry I didn’t study. → I wish I had studied.'],
+['No point / no use','rewrite','There’s no point/use (in) + -ing; it’s (not) worth + -ing.','It’s pointless to argue. → There’s no point in arguing.'],
+['because of / owing to','rewrite','Change a clause into a noun phrase after due to / owing to / because of.','The match was cancelled because it rained. → The match was cancelled owing to the rain.'],
+['as long as / provided','rewrite','Conditions: provided (that), providing, on condition that, as long as.','You can borrow it if you return it. → You can borrow it provided you return it.']
+]};
+D.prep={label:'📌 Prepositions & confusables',items:[
+['depend on','preposition','be determined by; rely on','Success depends on effort.'],
+['result in / result from','preposition','cause (in) / be caused by (from)','Heavy rain resulted in floods. / Floods resulted from heavy rain.'],
+['consist of','preposition','be made up of','The team consists of ten players.'],
+['contribute to','preposition','help to cause or achieve','Diet contributes to health.'],
+['benefit from','preposition','gain advantage from','Students benefit from feedback.'],
+['insist on','preposition','demand firmly','She insisted on paying.'],
+['specialise in','preposition','focus on one field','He specialises in marine biology.'],
+['apologise to … for','preposition','say sorry','I apologised to her for the delay.'],
+['blame … for','preposition','hold responsible','They blamed him for the loss.'],
+['congratulate … on','preposition','praise for an achievement','We congratulated her on her win.'],
+['prevent … from','preposition','stop something happening','Rain prevented us from leaving.'],
+['protect … from','preposition','keep safe from harm','Sunscreen protects skin from burning.'],
+['suffer from','preposition','experience an illness or problem','He suffers from insomnia.'],
+['object to','preposition','disagree with (+ -ing)','I object to being treated like this.'],
+['be accustomed to','preposition','be used to (+ -ing)','She is accustomed to working late.'],
+['in terms of','preposition','regarding a particular aspect','It’s cheap in terms of cost.'],
+['on behalf of','preposition','representing someone','I speak on behalf of the class.'],
+['at the expense of','preposition','harming something else','Profit came at the expense of safety.'],
+['in the event of','preposition','if something happens','In the event of fire, leave calmly.'],
+['with regard to','preposition','concerning','With regard to your request, we agree.'],
+['by means of','preposition','using a method','Data was gathered by means of surveys.'],
+['affect / effect','confusable','affect (v) = influence; effect (n) = result','Noise affects sleep; its effect is lasting.'],
+['economic / economical','confusable','economic = of the economy; economical = cheap to use','An economic crisis; an economical car.'],
+['historic / historical','confusable','historic = important in history; historical = about the past','A historic victory; a historical novel.'],
+['principal / principle','confusable','principal = main/head; principle = rule or belief','The principal reason; a matter of principle.'],
+['sensible / sensitive','confusable','sensible = practical; sensitive = easily affected or hurt','A sensible plan; sensitive skin.'],
+['compliment / complement','confusable','compliment = praise; complement = go well with','A kind compliment; wine complements cheese.'],
+['adopt / adapt','confusable','adopt = take on; adapt = adjust','Adopt a policy; adapt to change.'],
+['lay / lie','confusable','lay (laid) = put down; lie (lay, lain) = recline','Lay the book down; I lay in bed.'],
+['rise / raise','confusable','rise = go up (no object); raise = lift sth (object)','Prices rise; they raised the price.'],
+['lose / loose','confusable','lose = misplace/fail to win; loose = not tight','Don’t lose it; a loose shirt.'],
+['discreet / discrete','confusable','discreet = careful, tactful; discrete = separate','A discreet enquiry; discrete categories.'],
+['stationary / stationery','confusable','stationary = not moving; stationery = writing materials','A stationary car; buy stationery.']
+]};
+D.skills={label:'📝 Exam skills',items:[
+['Essay structure','writing','Four paragraphs: introduction (paraphrase the topic + thesis), two body paragraphs (topic sentence → explanation → example), conclusion (restate + final thought).','Intro: Many people believe… This essay argues that…'],
+['Essay linking words','writing','Adding: moreover, furthermore. Contrast: however, nevertheless. Cause/result: consequently, as a result. Concluding: in conclusion, to sum up.','Moreover, schools should… However, critics argue…'],
+['Describing charts','writing','Trend verbs: rise sharply, climb steadily, plummet, fluctuate, level off, peak at. Compare with: whereas, in contrast, twice as many as.','Sales peaked at 50% in 2020 before plummeting to 20%.'],
+['Paraphrase the prompt','writing','Never copy the question. Swap words (important → vital), change structure, change word class.','Technology is harmful → Technological advances can have detrimental effects.'],
+['Skim then scan','reading','Skim headings and first sentences for the gist; scan for names, numbers and keywords when answering.','Underline keywords in the question first.'],
+['Inference questions','reading','If the answer is not stated, look for tone words and implied meaning; avoid extreme options (always, never, all).','Choose ‘the author is cautious’ over ‘the author is angry’ unless the text shows anger.'],
+['Cloze test method','reading','Before choosing, decide the part of speech needed, check collocations and prepositions, then read the whole sentence back.','Look at the words before and after the gap.'],
+['Listening: predict first','listening','Use the preparation time to read the questions, predict the answer type (number, name, adjective) and underline keywords.','A gap after ‘at’ is probably a time or place.'],
+['Listening: distractors','listening','Speakers often correct themselves or mention several options; the final choice is the answer. Listen for but, actually, I mean.','‘Thursday… no, sorry, Friday.’ → Friday.'],
+['Error log','any','Record each mistake and why (vocabulary, grammar, careless). Review it before every practice paper.','Spot your top three repeating mistakes and fix them first.']
+]};
+keys.splice(3,0,'wf','trans','prep','skills');render();
+</script>
+<style>.fi{width:100%;margin:4px 0;padding:8px 10px;border:2px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit}</style>
+<script>
+const P=s=>s.trim().split('\n').map(l=>l.split('|')),T3=(t,s)=>P(s).map(r=>[r[0],t,r[1],r[2]]);
+D.vocab.items.push(...P(`abate|verb|become less intense|The storm abated by noon.
+acumen|noun|sharp judgment|Her business acumen is rare.
+adept|adj|very skilled|He is adept at negotiating.
+aloof|adj|distant, not friendly|She remained aloof from the gossip.
+anomaly|noun|something that deviates from normal|The result is a statistical anomaly.
+arduous|adj|requiring great effort|An arduous climb.
+aspire|verb|to aim high|He aspires to become a surgeon.
+avid|adj|very enthusiastic|An avid reader.
+blatant|adj|completely obvious (bad)|A blatant lie.
+catalyst|noun|something that speeds up change|The scandal was a catalyst for reform.
+circumvent|verb|find a way around|They circumvented the rules.
+clandestine|adj|secret|A clandestine meeting.
+cogent|adj|clear and convincing|A cogent argument.
+condone|verb|accept wrongdoing|We cannot condone violence.
+copious|adj|abundant|She took copious notes.
+corroborate|verb|confirm with evidence|Witnesses corroborated his story.
+curtail|verb|reduce or cut short|Funding was curtailed.
+deplete|verb|use up|Resources are being depleted.
+derive|verb|obtain from a source|The word derives from Latin.
+disparity|noun|a great difference|A disparity in wages.
+dwindle|verb|gradually become smaller|Support dwindled.
+elicit|verb|draw out a response|The joke elicited laughter.
+eradicate|verb|destroy completely|Polio was nearly eradicated.
+exemplary|adj|serving as a model|Exemplary behaviour.
+exhaustive|adj|thorough and complete|An exhaustive search.
+flourish|verb|grow well|Business flourished.
+fluctuate|verb|rise and fall irregularly|Prices fluctuate daily.
+gauge|verb|estimate|It’s hard to gauge public opinion.
+haphazard|adj|lacking order|A haphazard approach.
+illuminate|verb|clarify; light up|The study illuminates the problem.
+imminent|adj|about to happen|An imminent storm.
+indigenous|adj|native to a place|Indigenous plants.
+infer|verb|conclude from evidence|We can infer that he left.
+innate|adj|inborn|An innate talent.
+insatiable|adj|impossible to satisfy|Insatiable curiosity.
+integral|adj|essential as part of a whole|Music is integral to the festival.
+lethargic|adj|lacking energy|Heat made us lethargic.
+mediocre|adj|average; not good|A mediocre performance.
+mutual|adj|shared by both|Mutual respect.
+negligible|adj|too small to matter|The cost is negligible.
+oblivious|adj|unaware|Oblivious to the danger.
+plethora|noun|an excessive amount|A plethora of options.
+precarious|adj|unstable; dangerous|A precarious position.
+predominant|adj|most common or powerful|The predominant view.
+proficient|adj|skilled|Proficient in three languages.
+proliferate|verb|increase rapidly|Fake news proliferated.
+rectify|verb|put right|Rectify the error.
+refrain|verb|hold back from doing|Please refrain from smoking.
+relentless|adj|never stopping|Relentless pressure.
+render|verb|cause to become|The news rendered her speechless.
+scrupulous|adj|very careful and honest|Scrupulous attention to detail.
+stringent|adj|strict|Stringent regulations.
+substantiate|verb|provide evidence for|Claims must be substantiated.
+succinct|adj|brief and clear|A succinct summary.
+superfluous|adj|unnecessary|Superfluous details.
+sustain|verb|keep going; support|Sustain economic growth.
+transient|adj|short-lived|Transient fame.
+unwavering|adj|steady|Unwavering support.
+vindicate|verb|show to be right|The results vindicated her theory.`));
+D.idioms.items.push(...T3('idiom',`at the drop of a hat|immediately|He’d move at the drop of a hat.
+his bark is worse than his bite|sounds fiercer than he is|Don’t worry, his bark is worse than his bite.
+between a rock and a hard place|facing two bad options|I’m between a rock and a hard place.
+blow your own trumpet|boast|He loves to blow his own trumpet.
+bury the hatchet|make peace|They finally buried the hatchet.
+call the shots|be in charge|Who calls the shots here?
+caught red-handed|caught doing wrong|He was caught red-handed.
+come rain or shine|whatever happens|I’ll be there come rain or shine.
+cut to the chase|get to the point|Let’s cut to the chase.
+down to earth|practical and modest|Despite fame, she’s down to earth.
+drive someone up the wall|irritate greatly|The noise drives me up the wall.
+face the music|accept the consequences|He must face the music.
+fall on deaf ears|be ignored|Her warnings fell on deaf ears.
+give the cold shoulder|deliberately ignore|She gave him the cold shoulder.
+go back to the drawing board|start planning again|The plan failed; back to the drawing board.
+hit the books|study hard|Time to hit the books.
+in a nutshell|briefly|In a nutshell, we lost.
+in the nick of time|just in time|We arrived in the nick of time.
+know the ropes|understand how things work|She knows the ropes.
+let sleeping dogs lie|avoid stirring up trouble|Let sleeping dogs lie.
+make a mountain out of a molehill|exaggerate a small problem|Don’t make a mountain out of a molehill.
+not my cup of tea|not something I like|Opera isn’t my cup of tea.
+off the top of my head|without checking|Off the top of my head, about thirty.
+on cloud nine|extremely happy|She was on cloud nine.
+pay through the nose|pay far too much|We paid through the nose for tickets.
+put your foot in your mouth|say something tactless|I really put my foot in my mouth.
+rock the boat|cause trouble|Don’t rock the boat.
+run out of steam|lose energy|The project ran out of steam.
+stick to your guns|refuse to change your mind|She stuck to her guns.
+through thick and thin|in good times and bad|Friends through thick and thin.
+the whole nine yards|everything possible|We gave them the whole nine yards.`),...T3('phrasal verb',`act on|take action because of|Act on the advice.
+back out|withdraw from an agreement|He backed out of the deal.
+blow up|explode; lose your temper|She blew up at me.
+break into|enter by force|Burglars broke into the house.
+bring out|release; reveal|They brought out a new phone.
+carry on|continue|Carry on working.
+catch on|become popular; understand|The trend caught on.
+come about|happen|How did it come about?
+come round|regain consciousness; change opinion|He came round to my view.
+cut off|disconnect; isolate|The village was cut off by snow.
+die out|become extinct|Dinosaurs died out.
+dwell on|think too much about|Don’t dwell on mistakes.
+fall behind|fail to keep pace|Don’t fall behind with homework.
+get along with|have a good relationship with|I get along with my sister.
+go off|explode; go bad|The milk went off.
+hand down|pass to the next generation|Customs are handed down.
+kick off|begin|The match kicks off at eight.
+lay off|dismiss workers|Five hundred staff were laid off.
+look out for|watch for|Look out for pickpockets.
+make up|invent; reconcile; form|He made up an excuse.
+pass out|faint|She passed out from the heat.
+phase out|gradually stop using|Plastic bags are being phased out.
+play down|make seem less important|He played down the risk.
+pull through|survive|He pulled through the surgery.
+put forward|propose|She put forward a plan.
+sign up for|enrol in|Sign up for the course.
+stand up for|defend|Stand up for your rights.
+take in|absorb; deceive|I was taken in by the scam.
+tell apart|distinguish|Can you tell the twins apart?
+tone down|make less extreme|Tone down your language.
+turn into|become|A tadpole turns into a frog.
+wipe out|destroy completely|The disease wiped out the herd.`),...T3('collocation',`bring to light|reveal|The inquiry brought new facts to light.
+come to terms with|accept|He came to terms with the loss.
+exert influence|have an effect on|The media exerts influence.
+fall prey to|become a victim of|Many fall prey to scams.
+gain momentum|increase in pace|The campaign gained momentum.
+play a pivotal role|be crucial|She played a pivotal role.
+reap the benefits|enjoy the results|Farmers reaped the benefits.
+shed light on|clarify|Research shed light on the cause.
+take its toll|cause damage|Stress takes its toll.
+strike a balance|find a middle ground|Strike a balance between work and rest.
+set a precedent|create an example|The ruling set a precedent.
+make headway|make progress|We’re making headway.
+run the risk of|risk|You run the risk of failing.
+spark a debate|start a debate|The bill sparked a debate.
+meet the criteria|satisfy requirements|Applicants must meet the criteria.`));
+D.grammar.items.push(...P(`But for / Without|structure|‘But for’ + noun = if it hadn’t been for.|But for your help, I would have failed.
+Little did / Seldom|structure|Negative-style inversion with little, seldom, hardly ever.|Little did she know what awaited her.
+Perfect gerund|structure|having + pp for an earlier action after deny, admit, regret.|He denied having stolen it.
+Reduced adverbial clauses|structure|Drop subject + be when both subjects match.|While waiting, she read. / Once finished, leave.
+Quantifier + of which/whom|structure|Non-defining clause with a quantity.|She has ten books, most of which are old.
+Given that / in that|linker|Formal ways to give reasons.|Given that it’s late, we’ll stop.
+Make / let / allow|structure|make + obj + base; passive be made to V; let has no passive; allow + obj + to V.|He was made to apologise.
+Question tags|structure|Positive → negative tag; Let’s → shall we; imperative → will you; I am → aren’t I.|I’m late, aren’t I?`));
+D.prep.items.push(...T3('preposition',`adhere to|follow (rules)|Adhere to the guidelines.
+account for|explain; make up|Students account for 40%.
+attribute … to|say something is caused by|He attributed his success to luck.
+comply with|obey|Comply with the rules.
+differ from|be unlike|Cats differ from dogs.
+excel at|be very good at|She excels at maths.
+in favour of|supporting|I’m in favour of the plan.
+exempt from|free from a duty|Students are exempt from fees.
+lead to|cause|Smoking leads to cancer.
+inclined to|likely to|He’s inclined to agree.`));
+D.wf.items.push(...P(`analyse|analysis(n);analyst(n);analytical(adj);analytically(adv)|Analytical skills matter.
+compare|comparison(n);comparative(adj);comparatively(adv);incomparable(adj)|A comparative study.
+communicate|communication(n);communicator(n);communicative(adj);uncommunicative(adj)|A communicative lesson.
+educate|education(n);educator(n);educational(adj);uneducated(adj)|An educational trip.
+explain|explanation(n);explanatory(adj);unexplained(adj);inexplicable(adj)|An inexplicable delay.
+inform|information(n);informant(n);informative(adj);informal(adj)|An informative talk.
+invent|invention(n);inventor(n);inventive(adj);inventively(adv)|An inventive design.
+organise|organisation(n);organiser(n);organised(adj);disorganised(adj)|A disorganised desk.
+protect|protection(n);protector(n);protective(adj);protectively(adv)|A protective cover.
+reduce|reduction(n);reducible(adj);irreducible(adj)|A significant reduction.
+relate|relation(n);relationship(n);relative(adj);relatively(adv);unrelated(adj)|Relatively few came.
+repeat|repetition(n);repetitive(adj);repeatedly(adv);repeatable(adj)|A repetitive task.
+tolerate|tolerance(n);tolerant(adj);intolerant(adj);intolerable(adj)|An intolerable noise.
+satisfy|satisfaction(n);satisfactory(adj);satisfactorily(adv);unsatisfied(adj)|A satisfactory result.
+beauty|beautify(v);beautiful(adj);beautifully(adv);beautician(n)|A beautifully kept garden.
+courage|courageous(adj);courageously(adv);encourage(v);discourage(v);encouragement(n)|Words of encouragement.
+critic|criticism(n);criticise(v);critical(adj);critically(adv);critique(n)|Critically ill.`).map(r=>[r[0],'word family',r[1].split(';').join(' · '),r[2]]));
+D.map={label:'🌳 Family map',items:D.wf.items};
+let cust={};try{cust=JSON.parse(localStorage.getItem('eng-custom')||'{}')}catch(e){}
+for(const s in cust)if(D[s])D[s].items.push(...cust[s]);
+const sc2=()=>{try{localStorage.setItem('eng-custom',JSON.stringify(cust))}catch(e){}},tgt=()=>sec=='map'?'wf':sec;
+let fm=null,mv={x:10,y:10,k:.55};
+function renderMap(L){const fam=D.wf.items,cols=3,W=460,H=420,C={n:'#3b82f6',v:'#10b981',adj:'#f59e0b',adv:'#ec4899'};let g='';
+fam.forEach((t,i)=>{const cx=(i%cols)*W+W/2,cy=Math.floor(i/cols)*H+H/2;
+const fs=t[2].split(' · ').map(s=>{const m=s.match(/^(.*?)\s*\((\w+)\)$/);return m?[m[1],m[2]]:[s,'']});
+g+=`<circle cx='${cx}' cy='${cy}' r='195' style='fill:var(--card)' opacity='.6' stroke='#9993' stroke-width='2'/>`;
+fs.forEach((f,j)=>{const a=6.2832*j/fs.length-1.5708,x=cx+Math.cos(a)*150,y=cy+Math.sin(a)*135,c=C[f[1]]||'#8b5cf6',w=(f[0].length+f[1].length+1)*7.5+24;
+g+=`<line x1='${cx}' y1='${cy}' x2='${x}' y2='${y}' stroke='${c}' stroke-width='3' opacity='.55'/><g data-m='${i}'><rect x='${x-w/2}' y='${y-15}' width='${w}' height='30' rx='15' fill='${c}'/><text x='${x}' y='${y+5}' text-anchor='middle' font-size='14' fill='#fff'>${esc(f[0])} <tspan font-size='10' opacity='.8'>${f[1]}</tspan></text></g>`});
+g+=`<g data-m='${i}'><circle cx='${cx}' cy='${cy}' r='44' fill='#7a5cff'/><text x='${cx}' y='${cy+5}' text-anchor='middle' font-size='16' font-weight='700' fill='#fff'>${esc(t[0])}</text></g>`});
+L.innerHTML=`<div class='row' style='justify-content:flex-start;margin:0 0 8px'><button data-y='mz+'>＋</button><button data-y='mz-'>－</button><button data-y='mzr'>Reset</button><span class='cnt'>Drag to pan · scroll or use ＋－ to zoom · tap a word · <b style='color:#3b82f6'>noun</b> <b style='color:#10b981'>verb</b> <b style='color:#f59e0b'>adj</b> <b style='color:#ec4899'>adv</b></span></div><svg id='msvg' style='width:100%;height:68vh;touch-action:none;border:2px solid var(--line);border-radius:16px;background:var(--card);cursor:grab'><g id='mg' transform='translate(${mv.x},${mv.y}) scale(${mv.k})'>${g}</g></svg><p class='clue' id='mcap'>Tap any word to see its family sentence.</p>`;
+const s=$('msvg'),G=$('mg');let d=null,mo=0;const ap=()=>G.setAttribute('transform',`translate(${mv.x},${mv.y}) scale(${mv.k})`);
+s.onpointerdown=e=>{d={x:e.clientX-mv.x,y:e.clientY-mv.y};mo=0};s.onpointerup=s.onpointerleave=()=>{d=null};
+s.onpointermove=e=>{if(!d)return;const nx=e.clientX-d.x,ny=e.clientY-d.y;if(Math.abs(nx-mv.x)+Math.abs(ny-mv.y)>3)mo=1;mv.x=nx;mv.y=ny;ap()};
+s.onwheel=e=>{e.preventDefault();const r=s.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top,nk=Math.min(3,Math.max(.15,mv.k*(e.deltaY<0?1.15:.87)));mv.x=px-(px-mv.x)*nk/mv.k;mv.y=py-(py-mv.y)*nk/mv.k;mv.k=nk;ap()};
+s.onclick=e=>{if(mo)return;const n=e.target.closest('[data-m]');if(n){const t=fam[+n.dataset.m];$('mcap').textContent=t[0]+' → '+t[3]}}}
+const rq=renderQuiz;renderQuiz=function(){if(sec=='map'){$('list').className='';return renderMap($('list'))}return rq()};
+const rw=render;render=function(){if(sec=='map'){const q=quiz;quiz=true;rw();quiz=q}else rw();
+if(fm){const L=$('list'),T=tgt(),fl=T=='flash',lb=fl?['Answer','Type (idiom, word…)','Gen Z clue','Meme caption','Emoji']:['Term','Type (word, idiom…)','Meaning','Example sentence'];if(T=='wf')lb[2]='Forms e.g. decision (n) · decisive (adj)';
+let h=`<div class='card'><b>➕ Add to “${D[T].label}”</b>`+lb.map((x,i)=>`<input class='fi' data-f='${i}' placeholder='${x}' value='${esc(fm[i]||'').replace(/'/g,'&#39;')}'>`).join('')+(fm.err?`<p class='cnt' style='color:var(--bad)'>Fill in the first and third boxes.</p>`:'')+`<div class='row'><button class='on' data-y='fsave'>Save</button><button data-y='fcancel'>Close</button></div>`;
+const mine=cust[T]||[];if(mine.length)h+=`<p class='cnt'>Your items here:</p>`+mine.map((t,i)=>`<div class='cnt'>${esc(t[0])} <button class='lrn' data-y='fdel' data-i='${i}'>🗑</button></div>`).join('');
+L.insertAdjacentHTML('afterbegin',h+'</div>')}};
+document.addEventListener('input',e=>{if(fm&&e.target.dataset.f!==undefined)fm[+e.target.dataset.f]=e.target.value});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-y]');if(!b)return;e.stopImmediatePropagation();const y=b.dataset.y,T=tgt();
+if(y=='fopen')fm=fm||[];else if(y=='fcancel')fm=null;
+else if(y=='fsave'){if(!fm||!fm[0]||!fm[2]){fm=fm||[];fm.err=1;render();return}
+const it=T=='flash'?[fm[0],fm[1]||'custom',fm[2],fm[3]||'',fm[4]||'⭐']:[fm[0],fm[1]||'custom',fm[2],fm[3]||''];(cust[T]=cust[T]||[]).push(it);D[T].items.push(it);sc2();fm=[]}
+else if(y=='fdel'){const it=cust[T].splice(+b.dataset.i,1)[0],a=D[T].items,j=a.indexOf(it);if(j>-1)a.splice(j,1);sc2()}
+else if(y=='mz+')mv.k=Math.min(3,mv.k*1.25);else if(y=='mz-')mv.k=Math.max(.15,mv.k/1.25);else if(y=='mzr')mv={x:10,y:10,k:.55};
+render()},true);
+const ab=document.createElement('button');ab.textContent='➕ Add';ab.dataset.y='fopen';$('resetBtn').before(ab);
+keys.splice(keys.indexOf('wf')+1,0,'map');render();
+</script>
+<script>
+/* ===== More content ===== */
+const addNew=(s,arr)=>{const have=new Set(D[s].items.map(t=>t[0].toLowerCase()));arr.forEach(t=>{if(!have.has(t[0].toLowerCase())){have.add(t[0].toLowerCase());D[s].items.push(t)}})};
+addNew('vocab',P(`affluent|adj|wealthy|An affluent suburb.
+ambitious|adj|having a strong desire to succeed|An ambitious young lawyer.
+anecdotal|adj|based on personal stories, not hard evidence|Anecdotal evidence is unreliable.
+authentic|adj|genuine|An authentic Italian recipe.
+bias|noun|unfair preference for or against something|Media bias worries voters.
+coerce|verb|force someone by threats|He was coerced into signing.
+complacent|adj|smugly satisfied; not trying harder|Don’t grow complacent after one win.
+consensus|noun|general agreement|No consensus emerged.
+disseminate|verb|spread widely|Information is disseminated online.
+diverge|verb|go in different directions|Their opinions diverged.
+exploit|verb|use fully or unfairly|Don’t exploit workers.
+mandatory|adj|required by law or rule|Mandatory safety training.
+overt|adj|done openly|Overt hostility.
+pertinent|adj|directly relevant|A pertinent question.
+reconcile|verb|make compatible; restore friendship|Reconcile work and family life.
+tangible|adj|real; able to be felt or measured|Tangible benefits.
+valid|adj|logically sound; officially acceptable|A valid point.
+zealous|adj|full of passion|A zealous campaigner.
+ameliorate|verb|make better|Reforms ameliorated conditions.`));
+addNew('idioms',[...T3('idiom',`a dime a dozen|very common, so not special|Cheap phones are a dime a dozen.
+a storm in a teacup|a big fuss about something small|It’s just a storm in a teacup.
+add insult to injury|make a bad situation worse|He was late and, to add insult to injury, forgot the gift.
+actions speak louder than words|what you do matters more than what you say|Actions speak louder than words.
+back to square one|back at the very beginning|The deal collapsed: back to square one.
+beat around the bush|avoid the main point|Stop beating around the bush.
+bite off more than you can chew|take on too much|He bit off more than he could chew.
+burn bridges|ruin relationships permanently|Never burn bridges with old employers.
+by the skin of your teeth|only just|She passed by the skin of her teeth.
+cross that bridge when you come to it|deal with a problem only when it happens|We’ll cross that bridge when we come to it.
+don’t count your chickens|don’t assume success before it happens|Don’t count your chickens before they hatch.
+every cloud has a silver lining|bad situations have good sides|Every cloud has a silver lining.
+get out of hand|become uncontrollable|The party got out of hand.
+give someone the benefit of the doubt|trust someone without proof|I’ll give you the benefit of the doubt.
+in hot water|in trouble|He’s in hot water with his boss.
+jump on the bandwagon|join a popular trend|Brands jumped on the bandwagon.
+keep your chin up|stay positive|Keep your chin up; it’ll improve.
+kill two birds with one stone|achieve two things at once|Cycling kills two birds with one stone.
+leave no stone unturned|try every possibility|Police left no stone unturned.
+miss the boat|lose an opportunity|Apply now or you’ll miss the boat.
+neck and neck|level in a race|The candidates are neck and neck.
+off the hook|freed from trouble or duty|The new evidence let him off the hook.
+on the ball|alert and efficient|She’s really on the ball.
+once bitten, twice shy|careful after a bad experience|Once bitten, twice shy.
+play it by ear|improvise|We’ll play it by ear.
+pull yourself together|calm down and control yourself|Pull yourself together!
+read between the lines|find the hidden meaning|Read between the lines of her email.
+see eye to eye|agree|We don’t see eye to eye on money.
+take it with a pinch of salt|don’t fully believe it|Take his claims with a pinch of salt.
+the ball is in your court|it’s your decision now|I’ve offered; the ball is in your court.
+the best of both worlds|the benefits of two different things|Remote work gives you the best of both worlds.
+throw in the towel|give up|After three losses he threw in the towel.
+the tip of the iceberg|a small visible part of a bigger problem|These errors are the tip of the iceberg.
+wrap your head around|manage to understand|I can’t wrap my head around quantum physics.
+you can’t judge a book by its cover|appearances can mislead|Remember, you can’t judge a book by its cover.
+a taste of your own medicine|the same bad treatment you give others|He got a taste of his own medicine.
+barking up the wrong tree|pursuing the wrong idea|You’re barking up the wrong tree.`),...T3('phrasal verb',`back up|support; make a copy of|Back up your files.
+break down|stop working; collapse|The car broke down.
+bring up|raise (a child or topic)|She brought up the budget.
+call off|cancel|The match was called off.
+carry out|perform|They carried out an experiment.
+clamp down on|act strictly against|Police clamped down on speeding.
+come across|find by chance|I came across an old photo.
+cut back on|reduce|Cut back on sugar.
+drop out|leave a course early|He dropped out of university.
+end up|finally be in a situation|We ended up walking home.
+fall through|fail to happen|The deal fell through.
+get away with|escape punishment for|He got away with cheating.
+give in|surrender|She finally gave in.
+go through|experience; examine|He went through a tough time.
+look into|investigate|We’ll look into the complaint.
+make out|see or understand with difficulty|I can’t make out the sign.
+miss out on|lose a chance of|Don’t miss out on this offer.
+point out|draw attention to|She pointed out a mistake.
+put off|postpone; discourage|Rain put us off.
+rule out|exclude|Doctors ruled out cancer.
+set up|establish|They set up a charity.
+show off|display boastfully|Stop showing off.
+take over|assume control|A rival took over the firm.
+turn out|prove to be|It turned out to be false.
+work out|solve; exercise|I worked out the answer.`)]);
+/* ===== Word families ===== */
+const FR=`ubiquitous:ubiquity n,ubiquitously adv
+ephemeral:ephemerality n,ephemerally adv
+meticulous:meticulousness n,meticulously adv
+ambivalent:ambivalence n,ambivalently adv
+pragmatic:pragmatism n,pragmatist n,pragmatically adv
+eloquent:eloquence n,eloquently adv
+scrutinise:scrutiny n,scrutineer n
+mitigate:mitigation n,mitigating adj,unmitigated adj
+exacerbate:exacerbation n,exacerbating adj
+inevitable:inevitability n,inevitably adv,evitable adj
+plausible:plausibility n,plausibly adv,implausible adj
+resilient:resilience n,resiliently adv
+candid:candour n,candidly adv
+arbitrary:arbitrariness n,arbitrarily adv
+benevolent:benevolence n,benevolently adv,malevolent adj
+cynical:cynic n,cynicism n,cynically adv
+diligent:diligence n,diligently adv
+enigmatic:enigma n,enigmatically adv
+fastidious:fastidiousness n,fastidiously adv
+gregarious:gregariousness n,gregariously adv
+hinder:hindrance n
+impartial:impartiality n,impartially adv,partial adj,partiality n
+juxtapose:juxtaposition n
+lucid:lucidity n,lucidly adv
+mundane:mundanely adv
+nuance:nuanced adj
+obsolete:obsolescence n,obsolescent adj
+pervasive:pervade v,pervasiveness n,pervasively adv
+reluctant:reluctance n,reluctantly adv
+tenacious:tenacity n,tenaciously adv
+unprecedented:precedent n,unprecedentedly adv
+volatile:volatility n
+whimsical:whim n,whimsy n,whimsically adv
+alleviate:alleviation n
+comprehensive:comprehend v,comprehension n,comprehensible adj,incomprehensible adj,comprehensively adv
+detrimental:detriment n,detrimentally adv
+feasible:feasibility n,feasibly adv,unfeasible adj
+abundant:abound v,abundance n,abundantly adv
+adamant:adamantly adv
+aesthetic:aesthetics n,aesthete n,aesthetically adv
+ambiguous:ambiguity n,ambiguously adv,unambiguous adj
+apprehensive:apprehend v,apprehension n,apprehensively adv
+astute:astuteness n,astutely adv
+audacious:audacity n,audaciously adv
+austere:austerity n,austerely adv
+bolster:
+brevity:brief adj,briefly adv,abbreviate v,abbreviation n
+coherent:cohere v,coherence n,coherently adv,incoherent adj
+compelling:compel v,compulsion n,compulsory adj,compulsive adj
+conspicuous:conspicuously adv,inconspicuous adj
+contentious:contend v,contention n,contentiously adv
+convoluted:convolution n
+credible:credit n,credibility n,credibly adv,incredible adj,discredit v
+culminate:culmination n
+daunting:daunt v,dauntless adj,undaunted adj
+deter:deterrent n,deterrence n
+discrepancy:discrepant adj
+dismantle:dismantling n
+elusive:elude v,elusiveness n,elusively adv
+empirical:empiricism n,empiricist n,empirically adv
+endeavour:endeavour v
+ensue:ensuing adj
+equitable:equity n,equitably adv,inequitable adj
+erratic:erratically adv
+exemplify:example n,exemplification n,exemplary adj
+formidable:formidably adv
+frugal:frugality n,frugally adv
+futile:futility n,futilely adv
+hamper:hamper n
+hypothetical:hypothesis n,hypothesise v,hypothetically adv
+impede:impediment n
+impetus:impetuous adj,impetuosity n,impetuously adv
+incentive:incentivise v,disincentive n
+indispensable:dispense v,indispensably adv
+inherent:inherit v,inheritance n,inherently adv
+intricate:intricacy n,intricately adv
+lenient:leniency n,leniently adv
+lucrative:lucratively adv
+meagre:meagrely adv
+notorious:notoriety n,notoriously adv
+obscure:obscure v,obscurity n,obscurely adv
+ominous:omen n,ominously adv
+paramount:paramountcy n
+peculiar:peculiarity n,peculiarly adv
+prevalent:prevail v,prevailing adj,prevalence n
+profound:profundity n,profoundly adv
+prudent:prudence n,prudently adv,imprudent adj
+rigorous:rigour n,rigorously adv
+scarce:scarcity n,scarcely adv
+spontaneous:spontaneity n,spontaneously adv
+stagnant:stagnate v,stagnation n
+subtle:subtlety n,subtly adv
+tentative:tentatively adv
+thrive:thriving adj
+trivial:triviality n,trivialise v,trivially adv
+undermine:undermining n
+vulnerable:vulnerability n,vulnerably adv,invulnerable adj
+wane:waning adj
+wary:wariness n,warily adv,beware v
+ostentatious:ostentation n,ostentatiously adv
+prolific:prolifically adv
+reticent:reticence n
+sceptical:sceptic n,scepticism n,sceptically adv
+ardent:ardour n,ardently adv
+brazen:brazenness n,brazenly adv
+capricious:caprice n,capriciously adv
+cumbersome:cumbersomely adv
+dubious:doubt n,doubtful adj,dubiousness n,dubiously adv
+eccentric:eccentricity n,eccentrically adv
+exuberant:exuberance n,exuberantly adv
+frivolous:frivolity n,frivolously adv
+impeccable:impeccably adv
+inadvertent:inadvertently adv
+jeopardise:jeopardy n
+lament:lamentation n,lamentable adj,lamentably adv
+magnanimous:magnanimity n,magnanimously adv
+nostalgic:nostalgia n,nostalgically adv
+pinnacle:
+quaint:quaintness n,quaintly adv
+resolute:resolve v,resolution n,resolutely adv,irresolute adj
+sublime:sublimity n,sublimely adv,sublimate v
+trepidation:
+unanimous:unanimity n,unanimously adv
+abate:abatement n
+acumen:
+adept:adeptness n,adeptly adv
+aloof:aloofness n,aloofly adv
+anomaly:anomalous adj,anomalously adv
+arduous:arduousness n,arduously adv
+aspire:aspiration n,aspirant n,aspiring adj,aspirational adj
+avid:avidity n,avidly adv
+blatant:blatantly adv
+catalyst:catalyse v,catalysis n,catalytic adj
+circumvent:circumvention n
+clandestine:clandestinely adv
+cogent:cogency n,cogently adv
+condone:
+copious:copiously adv
+corroborate:corroboration n,corroborative adj
+curtail:curtailment n
+deplete:depletion n,depleted adj
+derive:derivation n,derivative n,derivative adj
+disparity:disparate adj
+dwindle:dwindling adj
+elicit:
+eradicate:eradication n
+exemplary:exemplify v,example n,exemplification n
+exhaustive:exhaust v,exhaustion n,exhausted adj,exhausting adj,exhaustively adv
+flourish:flourishing adj
+fluctuate:fluctuation n
+gauge:gauge n
+haphazard:haphazardly adv
+illuminate:illumination n,illuminating adj,illuminated adj
+imminent:imminence n,imminently adv
+indigenous:indigenously adv
+infer:inference n,inferential adj
+innate:innately adv
+insatiable:satiate v,satiety n,insatiably adv
+integral:integrate v,integration n,integrity n,integrated adj
+lethargic:lethargy n,lethargically adv
+mediocre:mediocrity n
+mutual:mutuality n,mutually adv
+negligible:neglect v,negligence n,negligent adj,negligibly adv
+oblivious:oblivion n,obliviously adv
+plethora:
+precarious:precariousness n,precariously adv
+predominant:predominate v,predominance n,predominantly adv
+proficient:proficiency n,proficiently adv
+proliferate:proliferation n
+rectify:rectification n
+refrain:refrain n
+relentless:relentlessness n,relentlessly adv
+render:rendering n,rendition n
+scrupulous:scruple n,unscrupulous adj,scrupulously adv
+stringent:stringency n,stringently adv
+substantiate:substance n,substantial adj,substantiation n,unsubstantiated adj,substantially adv
+succinct:succinctness n,succinctly adv
+superfluous:superfluity n,superfluously adv
+sustain:sustenance n,sustainable adj,sustainability n,unsustainable adj
+transient:transience n,transiently adv
+unwavering:waver v,unwaveringly adv
+vindicate:vindication n,vindicated adj
+affluent:affluence n,affluently adv
+ambitious:ambition n,unambitious adj,ambitiously adv
+anecdotal:anecdote n,anecdotally adv
+authentic:authenticity n,authenticate v,inauthentic adj,authentically adv
+bias:biased adj,unbiased adj,bias v
+coerce:coercion n,coercive adj
+complacent:complacency n,complacently adv
+consensus:consent n,consent v,consensual adj
+disseminate:dissemination n
+diverge:divergence n,divergent adj,converge v,convergence n
+exploit:exploit n,exploitation n,exploitative adj
+mandatory:mandate n,mandate v,mandatorily adv
+overt:overtly adv,covert adj,covertly adv
+pertinent:pertinence n,impertinent adj,pertinently adv
+reconcile:reconciliation n,irreconcilable adj
+tangible:intangible adj,tangibly adv
+valid:validity n,validate v,validation n,invalid adj,validly adv
+zealous:zeal n,zealot n,zealously adv
+ameliorate:amelioration n`;
+const FAMS={};
+FR.split('\n').forEach(l=>{const i=l.indexOf(':');if(i<1)return;FAMS[l.slice(0,i)]=l.slice(i+1).split(',').filter(Boolean).map(s=>{const j=s.lastIndexOf(' ');return[s.slice(0,j),s.slice(j+1)]})});
+const PS={verb:'v',noun:'n'},PN={n:'noun',v:'verb',adj:'adjective',adv:'adverb'},CL={n:'#3b82f6',v:'#10b981',adj:'#f59e0b',adv:'#ec4899'};
+let fw=null;
+function famOf(w){if(FAMS[w])return FAMS[w];const t=D.wf.items.find(x=>x[0]==w);if(!t)return null;return t[2].split(' · ').map(s=>{const m=s.match(/^(.*?)\s*\((\w+)\)$/);return m?[m[1],m[2]]:[s,'']})}
+function renderTree(L){
+const v=D.vocab.items.find(t=>t[0]==fw),hp=v?(PS[v[1]]||v[1]):'',fs=famOf(fw)||[],n=fs.length,W=640,H=440,cx=W/2,cy=H/2;let g='';
+fs.forEach((f,j)=>{const a=6.2832*j/n-1.5708,x=cx+Math.cos(a)*(n>6?235:215),y=cy+Math.sin(a)*(n>6?165:150),c=CL[f[1]]||'#8b5cf6',w=(f[0].length+f[1].length+1)*8+28;
+g+=`<line x1='${cx}' y1='${cy}' x2='${x}' y2='${y}' stroke='${c}' stroke-width='3' opacity='.55'/><rect x='${x-w/2}' y='${y-16}' width='${w}' height='32' rx='16' fill='${c}'/><text x='${x}' y='${y+5}' text-anchor='middle' font-size='15' fill='#fff'>${esc(f[0])} <tspan font-size='11' opacity='.85'>${f[1]}</tspan></text>`});
+g+=`<circle cx='${cx}' cy='${cy}' r='56' fill='#7a5cff'/><text x='${cx}' y='${cy+5}' text-anchor='middle' font-size='${fw.length>10?15:19}' font-weight='700' fill='#fff'>${esc(fw)}</text>`+(hp?`<text x='${cx}' y='${cy+24}' text-anchor='middle' font-size='11' fill='#fff' opacity='.85'>${hp}</text>`:'');
+const lg=Object.keys(CL).map(k=>`<b style='color:${CL[k]}'>${PN[k]}</b>`).join(' · ');
+L.innerHTML=`<div class='row' style='justify-content:flex-start;margin:0 0 10px'><button data-w2='back'>← Advanced words</button><button data-w2='all'>🌳 All families</button></div>
+<div class='card'><span class='term'>${esc(fw)}</span> ${v?`<span class='tag'>${v[1]}</span><p class='mean'>${esc(v[2])}</p><p class='ex'>${esc(v[3])}</p>`:''}</div>
+<div class='card'><svg viewBox='0 0 ${W} ${H}' style='width:100%;height:auto;display:block' role='img' aria-label='Word family tree of ${esc(fw)}'>${g}</svg><p class='cnt'>${lg}</p>${n?'':`<p class='mean'>No common derived forms for “${esc(fw)}”. It is mostly used just as it is.</p>`}</div>`+(n?`<div class='card'><b>Every form</b>${fs.map(f=>`<p class='mean'><b style='color:${CL[f[1]]||'inherit'}'>${esc(f[0])}</b> <span class='cnt'>${PN[f[1]]||f[1]}</span></p>`).join('')}</div>`:'')}
+const oRM=renderMap;renderMap=function(L){return fw?renderTree(L):oRM(L)};
+const r3=render;render=function(){if(sec!='map')fw=null;r3();
+if(sec=='vocab'&&!quiz)document.querySelectorAll('#list .card').forEach(c=>{const t=c.querySelector('.term');if(!t||c.querySelector('[data-w]'))return;const b=document.createElement('button');b.className='lrn';b.dataset.w=t.textContent;b.style.marginLeft='8px';b.textContent='🌳 Word family';const l=c.querySelector('.lrn');l?l.after(b):c.appendChild(b)})};
+document.addEventListener('click',e=>{const s=e.target.closest('[data-s]');if(s&&s.dataset.s=='map')fw=null;
+const b=e.target.closest('[data-w],[data-w2]');if(!b)return;e.stopImmediatePropagation();
+if(b.dataset.w){fw=b.dataset.w;sec='map';quiz=false;tag='All'}else if(b.dataset.w2=='back'){fw=null;sec='vocab'}else fw=null;
+render();window.scrollTo(0,0)},true);
+render();
+</script>
+<script>
+/* ===== More content (batch 2) ===== */
+addNew('idioms',[...T3('idiom',`a double-edged sword|something with both good and bad effects|Fame is a double-edged sword.
+a red herring|a misleading clue|The second suspect was a red herring.
+a wolf in sheep’s clothing|a harmful person who seems harmless|He’s a wolf in sheep’s clothing.
+a bolt from the blue|a complete surprise|The news was a bolt from the blue.
+at a loose end|with nothing to do|I was at a loose end on Sunday.
+be in the same boat|share the same difficult situation|We’re all in the same boat.
+bend over backwards|try very hard to help|They bent over backwards for us.
+call a spade a spade|speak plainly|I like to call a spade a spade.
+come full circle|return to the start|The story has come full circle.
+cut corners|do something cheaply, skipping steps|Never cut corners on safety.
+draw a blank|fail to remember or find|I drew a blank in the exam.
+a fish out of water|uncomfortable in unfamiliar surroundings|I felt like a fish out of water.
+get the ball rolling|start a process|Let’s get the ball rolling.
+hit the sack|go to bed|I’m exhausted; I’m going to hit the sack.
+hold water|seem logical or valid|Her excuse doesn’t hold water.
+jump the gun|act too soon|Don’t jump the gun and resign.
+low-hanging fruit|an easy target or task|Start with the low-hanging fruit.
+move the goalposts|change the rules unfairly|They keep moving the goalposts.
+pass the buck|shift responsibility to someone else|Managers passed the buck.
+push your luck|take a risk that may go too far|Don’t push your luck.
+rain on someone’s parade|spoil someone’s plans or joy|Sorry to rain on your parade.
+raise the bar|set a higher standard|The film raised the bar for animation.
+a rule of thumb|a rough guide|As a rule of thumb, sleep eight hours.
+save face|avoid embarrassment|He lied to save face.
+sit tight|wait patiently|Sit tight; help is coming.
+steal the show|attract the most attention|The child stole the show.
+take the plunge|commit to a big decision|They finally took the plunge and married.
+the proof of the pudding is in the eating|quality is shown by use|The proof of the pudding is in the eating.
+the writing is on the wall|failure is clearly coming|The writing is on the wall for the firm.
+turn a blind eye|deliberately ignore wrongdoing|Teachers turned a blind eye.
+water under the bridge|past and no longer important|That argument is water under the bridge.
+worth your salt|competent|Any teacher worth their salt knows this.
+play devil’s advocate|argue the opposite for debate|Let me play devil’s advocate.
+lose your touch|no longer be as skilled|The chef has lost his touch.
+bite the dust|fail or die|Another start-up bit the dust.`),...T3('phrasal verb',`bank on|rely on|Don’t bank on good weather.
+boil down to|be essentially|It boils down to money.
+brush up on|improve a skill|Brush up on your grammar.
+butt in|interrupt rudely|Sorry to butt in, but…
+chip in|contribute money or help|We all chipped in for a gift.
+come down with|become ill with|She came down with flu.
+cope with|deal successfully with|He copes with stress well.
+dawn on|become clear to|It dawned on me I’d lost my keys.
+do away with|abolish|The school did away with uniforms.
+drag on|continue too long|The meeting dragged on.
+fill in for|replace temporarily|I’m filling in for Sam.
+fizzle out|end weakly|The protest fizzled out.
+get round to|find time to do|I’ll get round to it soon.
+hold back|restrain; hesitate|She held back her tears.
+jot down|write quickly|Jot down the number.
+keep up with|stay at the same level as|Prices keep up with inflation.
+knuckle down|start working seriously|Time to knuckle down.
+lash out|attack verbally or physically|He lashed out at critics.
+mess up|do badly; spoil|I messed up the interview.
+mull over|think about carefully|She mulled over the offer.
+own up|admit a fault|No one owned up to it.
+pan out|develop (well)|It didn’t pan out as planned.
+pick up on|notice|Few picked up on the hint.
+pull off|succeed in doing something difficult|They pulled off a surprise win.
+rack up|accumulate|He racked up huge debts.
+run into|meet by chance; encounter|We ran into trouble.
+scale down|reduce in size|The project was scaled down.
+shrug off|dismiss as unimportant|He shrugged off the injury.
+sift through|examine carefully|Police sifted through the evidence.
+size up|assess|She sized up her opponent.
+slip up|make a small mistake|One slip up cost him.
+stand out|be noticeable|Her essay stood out.
+stem from|originate in|Problems stem from poor planning.
+step down|resign|The CEO stepped down.
+stumble upon|find by chance|I stumbled upon a café.
+sum up|summarise|To sum up, we agree.
+take after|resemble (a relative)|She takes after her mother.
+touch on|mention briefly|The talk touched on climate.
+usher in|mark the start of|The internet ushered in a new age.
+water down|make weaker|The law was watered down.
+wind up|end up; finish|We wound up in Paris.
+zero in on|focus on|Zero in on the key issue.`)]);
+addNew('vocab',P(`alienate|verb|make someone feel isolated or unfriendly|Harsh rules alienated staff.
+ascertain|verb|find out for certain|Ascertain the facts first.
+contemplate|verb|think deeply about|She contemplated quitting.
+delineate|verb|describe or outline precisely|The report delineates each role.
+discern|verb|notice or recognise with effort|I could barely discern a shape.
+embark|verb|begin a journey or project|They embarked on a new venture.
+fabricate|verb|invent (to deceive); manufacture|He fabricated evidence.
+gratuitous|adj|unnecessary and unjustified|Gratuitous violence.
+idiosyncratic|adj|peculiar to one person|An idiosyncratic style.
+meander|verb|wander or wind slowly|The river meanders.
+nebulous|adj|vague and unclear|A nebulous idea.
+opulent|adj|luxuriously rich|An opulent palace.
+pertain|verb|be relevant to|Facts pertaining to the case.
+quandary|noun|a state of uncertainty about what to do|I’m in a quandary.
+reprimand|verb|criticise formally|The pilot was reprimanded.
+sporadic|adj|occurring occasionally|Sporadic gunfire.
+tedious|adj|boring and long|A tedious lecture.
+uphold|verb|support or maintain|Uphold the law.
+verbose|adj|using too many words|A verbose report.`));
+addNew('prep',[...T3('preposition',`rely on|depend on with trust|You can rely on her.
+cope with|deal with successfully|He copes with pressure.
+dispose of|get rid of|Dispose of waste safely.
+refer to|mention; look at|Refer to page 5.
+resort to|turn to as a last option|They resorted to force.
+derive from|come from|The word derives from Greek.
+abstain from|choose not to do|Abstain from alcohol.
+conform to|follow rules or standards|Products conform to EU standards.
+subscribe to|agree with; pay for regularly|I subscribe to that view.
+conducive to|helping to produce|A quiet room is conducive to study.`),...T3('confusable',`imply / infer|imply = suggest; infer = conclude|Her tone implied anger; I inferred she was upset.
+emigrate / immigrate|emigrate = leave a country; immigrate = enter one|They emigrated from Italy and immigrated to Canada.
+elicit / illicit|elicit = draw out; illicit = illegal|Elicit a response; illicit trade.
+precede / proceed|precede = come before; proceed = continue|Proceed with the plan.
+council / counsel|council = group; counsel = advice|The council sought legal counsel.
+further / farther|further = more/additional; farther = greater distance|Walk farther; ask for further details.
+persecute / prosecute|persecute = mistreat; prosecute = take to court|He was prosecuted for fraud.`)]);
+const FR2=`alienate:alienation n,alienated adj
+ascertain:ascertainment n,ascertainable adj
+contemplate:contemplation n,contemplative adj
+delineate:delineation n
+discern:discernment n,discerning adj,discernible adj,indiscernible adj
+embark:embarkation n,disembark v
+fabricate:fabrication n,fabric n
+gratuitous:gratuity n,gratuitously adv
+idiosyncratic:idiosyncrasy n,idiosyncratically adv
+meander:meandering adj
+nebulous:nebula n,nebulously adv
+opulent:opulence n,opulently adv
+pertain:pertinent adj,appertain v
+quandary:
+reprimand:reprimand n
+sporadic:sporadically adv
+tedious:tedium n,tediously adv
+uphold:upheld adj
+verbose:verbosity n,verbosely adv`;
+FR2.split('\n').forEach(l=>{const i=l.indexOf(':');FAMS[l.slice(0,i)]=l.slice(i+1).split(',').filter(Boolean).map(s=>{const j=s.lastIndexOf(' ');return[s.slice(0,j),s.slice(j+1)]})});
+/* ===== Counts follow the selected filter on every tab ===== */
+const r4=render;render=function(){r4();
+const all=D[sec].items,sub=tag=='All'?all:all.filter(t=>t[1]==tag),n=sub.filter(t=>done[k(sec,t)]).length;
+$('bar').style.width=(sub.length?100*n/sub.length:0)+'%';
+$('cnt').textContent=n+' of '+sub.length+' learned'+(tag=='All'?'':' · '+tag+' only');
+document.querySelectorAll('#chips button').forEach(b=>{const t=b.dataset.t;if(t===undefined)return;b.textContent=t+' ('+(t=='All'?all.length:all.filter(x=>x[1]==t).length)+')'})};
+render();
+</script>
+<script>
+/* ===== Batch 3: content ===== */
+addNew('idioms',[...T3('idiom',`a drop in the ocean|a tiny amount compared with what is needed|Donations are a drop in the ocean.
+across the board|affecting everyone or everything|Pay rises across the board.
+ahead of the curve|more advanced than others|Stay ahead of the curve.
+at the end of the day|ultimately|At the end of the day, it’s your choice.
+beyond the pale|unacceptable|His remarks were beyond the pale.
+bite your tongue|stop yourself from speaking|I had to bite my tongue.
+break the bank|cost too much|A holiday won’t break the bank.
+burn the candle at both ends|exhaust yourself by overworking|He burns the candle at both ends.
+come to a head|reach a crisis|The dispute came to a head.
+cut your losses|stop before losing more|Cut your losses and sell.
+dig your heels in|refuse to change your mind|The union dug its heels in.
+drop the ball|make a careless mistake|Someone dropped the ball.
+flog a dead horse|waste effort on a lost cause|Arguing is flogging a dead horse.
+go to great lengths|try extremely hard|They went to great lengths to help.
+hit rock bottom|reach the lowest point|Sales hit rock bottom.
+in the long run|eventually|It pays off in the long run.
+make ends meet|have just enough money to live|She struggles to make ends meet.
+on the same page|in agreement|Let’s make sure we’re on the same page.
+out of the blue|unexpectedly|She called out of the blue.
+rub salt in the wound|make a bad situation worse|Don’t rub salt in the wound.
+the lion’s share|the largest part|He took the lion’s share.
+touch and go|uncertain; risky|It was touch and go for hours.
+take for granted|undervalue|Don’t take your health for granted.`),...T3('phrasal verb',`ask around|ask several people|I’ll ask around about flats.
+bail out|rescue from financial trouble|The state bailed out the bank.
+break through|make a discovery; force a way|Scientists broke through at last.
+build up|accumulate|Pressure builds up.
+call for|require|The situation calls for patience.
+clear up|tidy; explain; improve (weather)|Let’s clear up the confusion.
+come up against|face (a problem)|We came up against strong resistance.
+cut down on|reduce|Cut down on salt.
+dress up|wear smart or fancy clothes|They dressed up as pirates.
+fall out|quarrel|They fell out over money.
+follow up|take further action|Follow up the email with a call.
+hold out|last; resist|Supplies held out for a week.
+iron out|resolve small problems|Let’s iron out the details.
+join in|take part|Come and join in.
+let on|reveal a secret|She never let on that she knew.
+look forward to|anticipate with pleasure|I look forward to meeting you.
+open up|become more communicative|He finally opened up.
+pay off|be successful|Hard work pays off.
+pick out|choose; recognise|Pick out the best photo.
+rip off|cheat by overcharging|Tourists get ripped off.
+run through|rehearse; review|Run through the speech once more.
+settle down|become calm; start a stable life|They settled down in Hue.
+stand for|represent|What does UN stand for?
+take up|start (a hobby)|She took up climbing.
+think over|consider carefully|Think it over tonight.
+write off|dismiss as lost or useless|The car was written off.`),...T3('collocation',`draw a conclusion|reach a judgment|We can draw three conclusions.
+make a profit|earn money from business|The firm made a profit.
+pose a threat|be a danger|Pollution poses a threat.
+raise awareness|make people notice an issue|The campaign raised awareness.
+reach a compromise|agree by each giving something up|They reached a compromise.
+bear in mind|remember to consider|Bear in mind the deadline.
+launch a campaign|start an organised effort|They launched a campaign.
+take responsibility|accept blame or duty|He took responsibility.
+hold a grudge|keep resenting someone|She holds a grudge.
+withstand pressure|survive stress|Bridges must withstand pressure.
+foster a sense of|encourage a feeling of|Sport fosters a sense of belonging.
+catch sight of|suddenly see|I caught sight of her.`)]);
+addNew('vocab',P(`benign|adj|harmless; kind|A benign tumour.
+callous|adj|cruel and unfeeling|A callous remark.
+deliberate|adj|done on purpose|A deliberate act.
+fervent|adj|passionate|Fervent supporters.
+gullible|adj|easily fooled|A gullible tourist.
+hostile|adj|unfriendly|A hostile crowd.
+inept|adj|clumsy; lacking skill|An inept reply.
+jubilant|adj|extremely joyful|Jubilant fans.
+lavish|adj|extravagant|A lavish party.
+obstinate|adj|stubborn|An obstinate child.
+reckless|adj|careless of danger|Reckless driving.
+serene|adj|calm and peaceful|A serene lake.
+taciturn|adj|saying very little|A taciturn man.
+vivid|adj|bright; very clear|A vivid memory.
+wistful|adj|sadly longing|A wistful smile.`));
+`benign:benignity n,benignly adv,malign adj
+callous:callousness n,callously adv
+deliberate:deliberate v,deliberation n,deliberately adv
+fervent:fervour n,fervently adv
+gullible:gullibility n
+hostile:hostility n,hostilities n
+inept:ineptitude n,ineptly adv
+jubilant:jubilation n,jubilantly adv
+lavish:lavish v,lavishly adv
+obstinate:obstinacy n,obstinately adv
+reckless:recklessness n,recklessly adv
+serene:serenity n,serenely adv
+taciturn:taciturnity n
+vivid:vividness n,vividly adv
+wistful:wistfulness n,wistfully adv`.split('\n').forEach(l=>{const i=l.indexOf(':');FAMS[l.slice(0,i)]=l.slice(i+1).split(',').filter(Boolean).map(s=>{const j=s.lastIndexOf(' ');return[s.slice(0,j),s.slice(j+1)]})});
+addNew('grammar',P(`Mixed conditionals|structure|If + past perfect, would + base (past cause, present result).|If I had studied law, I would be a lawyer now.
+Subjunctive|structure|Base form after demand, insist, suggest, essential that.|I insist that he be present.
+Cleft sentences|structure|It is/was … that/who, or What … is …, to stress information.|It was Tom who broke it. / What I need is rest.
+Negative adverbial inversion|structure|Never, rarely, under no circumstances + auxiliary + subject.|Under no circumstances should you open it.
+Not only … but also|structure|Not only + auxiliary + subject … but (also).|Not only did he lie, but he also cheated.
+Participle clauses|structure|Replace relative or time clauses with -ing / -ed.|Having finished, she left.
+Future perfect & continuous|structure|will have + pp (done by then); will be + -ing (in progress).|By 2030 I will have graduated.
+Used to / be used to|structure|used to + base (past habit); be used to + -ing (accustomed).|I’m used to waking early.
+Defining vs non-defining|structure|Non-defining clauses need commas and can’t use ‘that’.|My brother, who lives in Hue, is a chef.
+Emphatic do|structure|do/does/did + base verb for emphasis.|I did tell you!
+Modal perfects|structure|must / might / can’t / should + have + pp: deduction or regret.|He can’t have left; his coat is here.
+The more … the more|structure|The + comparative, the + comparative.|The harder you work, the luckier you get.
+Gerund vs infinitive|structure|stop, remember, try, forget change meaning.|I stopped to rest. / I stopped resting.`));
+addNew('trans',P(`The more … the more|rewrite|Link two parallel increases.|As he practised more, he improved. → The more he practised, the better he became.
+Not only … but also|rewrite|Inversion after ‘Not only’.|He is rich and kind. → Not only is he rich, but he is also kind.
+Hardly … when|rewrite|Hardly + had + S + pp + when.|As soon as I sat down, the phone rang. → Hardly had I sat down when the phone rang.
+otherwise|rewrite|Otherwise = if not (start a new clause).|Hurry or you’ll be late. → Hurry; otherwise you’ll be late.
+in case|rewrite|in case + present = as a precaution.|Take a coat because it may rain. → Take a coat in case it rains.
+be supposed to|rewrite|Expectation or duty.|They expect him at six. → He is supposed to arrive at six.
+It takes … to|rewrite|Time expression.|I spent two hours writing it. → It took me two hours to write it.
+Reported questions|rewrite|Statement word order, no do-support, tense shift.|‘Where do you live?’ she asked. → She asked where I lived.
+used to|rewrite|Past habit.|I played chess as a child. → I used to play chess as a child.
+cause → lead to|rewrite|Swap verb for noun phrase.|Stress causes illness. → Stress leads to illness.`));
+addNew('skills',P(`Formal register|writing|Avoid contractions, slang and phrasal verbs; prefer one-word formal verbs (get → obtain).|Look into → investigate.
+Thesis statement|writing|One sentence giving your position plus two reasons.|This essay argues that remote work is beneficial for health and productivity.
+Hedging language|writing|Soften claims: tend to, arguably, it appears that, may.|Remote work may improve focus.
+Speaking part 2|speaking|Structure: what/who → where/when → why → how you feel. Use the full time and link with ‘which meant…’.|It was a trip to Hue, where…
+Speaking fluency|speaking|Use fillers like well, actually, to be fair instead of long pauses; paraphrase if you forget a word.|It’s a thing you use to… (paraphrase)
+Time management|any|Give each section a time limit; skip hard questions and return.|20 mins reading, 25 mins writing.
+Proofreading checklist|writing|Check subject–verb agreement, tenses, articles, spelling, punctuation and linking words.|Read the essay backwards, sentence by sentence.`));
+addNew('wf',P(`absorb|absorption(n);absorbent(adj);absorbed(adj);absorbing(adj)|An absorbing novel.
+achieve|achievement(n);achiever(n);achievable(adj);unachievable(adj)|An achievable goal.
+admire|admiration(n);admirer(n);admirable(adj);admirably(adv)|Admirable courage.
+advertise|advertisement(n);advertiser(n);advertising(n)|A clever advertisement.
+choose|choice(n);choosy(adj);chosen(adj)|A wide choice.
+decorate|decoration(n);decorator(n);decorative(adj);decorated(adj)|Decorative lights.
+discover|discovery(n);discoverer(n);undiscovered(adj)|A great discovery.
+enjoy|enjoyment(n);enjoyable(adj);enjoyably(adv)|An enjoyable trip.
+fail|failure(n);failing(adj);failed(adj)|A failed attempt.
+grow|growth(n);growing(adj);grown(adj);overgrown(adj)|Rapid growth.
+history|historian(n);historic(adj);historical(adj);historically(adv);prehistoric(adj)|A prehistoric cave.
+important|importance(n);importantly(adv);unimportant(adj)|Of great importance.
+lose|loss(n);loser(n);lost(adj)|A heavy loss.
+mean|meaning(n);meaningful(adj);meaningless(adj);meaningfully(adv)|A meaningful gift.`).map(r=>[r[0],'word family',r[1].split(';').join(' · '),r[2]]));
+addNew('flash',[
+['a drop in the ocean','idiom','me donating $1 to fix a global problem: tiny, symbolic, basically invisible','my contribution: 0.0001%','🌊'],
+['red herring','idiom','the plot twist that was a fake-out, detective show misdirect, the butler did NOT do it','the butler did NOT do it','🐟'],
+['the tip of the iceberg','idiom','you see one problem but underneath is a whole disaster zone','what you see vs what’s below','🧊'],
+['the ball is in your court','idiom','I left you on read, now it’s YOUR move, no pressure (lots of pressure)','your turn. your move.','🎾'],
+['steal the show','idiom','the guest star outshone everyone, main character energy, actual headliner','the extra upstaged the lead','🌟'],
+['jump the gun','idiom','posted the spoiler before the premiere, way too early, eager much?','did it before the starting whistle','🔫'],
+['make ends meet','idiom','rent, food, bills: barely surviving on a tiny budget, calculator sweating','me vs the end of the month','🧮'],
+['knuckle down','phrasal verb','phone off, tabs closed, serious grind mode ON before the deadline','locked in. no more scrolling.','📚'],
+['own up','phrasal verb','told the truth after the whole class got punished, finally confessed','okay it was me','🙋'],
+['shrug off','phrasal verb','got insulted but didn’t care, unbothered era','unbothered. moisturised.','🤷'],
+['gullible','word','believes EVERYTHING, clicks the free-iPhone link, trust-me-bro victim','clicks every suspicious link','🎣'],
+['serene','word','calm lake, soft music, zero stress, spa day vibes','vibes: immaculate','🏞️'],
+['reckless','word','zero safety, full send, no helmet, ‘hold my drink’','hold my drink','🛹'],
+['callous','word','shrugged at someone’s pain, cold, no empathy, heart.exe missing','heart not found','🧊']]);
+/* ===== Duplicate check when adding your own items ===== */
+const nm=s=>norm(s).replace(/^(to|a|an|the) /,'');
+function findDup(term,T){const n=nm(term);if(!n)return null;for(const s of [T,...keys.filter(x=>x!=T&&x!='map')]){if(!D[s])continue;const it=D[s].items.find(t=>nm(t[0])==n);if(it)return{s,it}}return null}
+let dup=null,allow=false;
+window.addEventListener('click',e=>{
+const b=e.target.closest('[data-y],[data-d],[data-g]');if(!b)return;
+if(b.dataset.y=='fsave'){if(allow){allow=false;dup=null;return}
+if(fm&&fm[0]){const d=findDup(fm[0],tgt());if(d){e.stopImmediatePropagation();dup=d;render();return}}dup=null;return}
+if(b.dataset.d){e.stopImmediatePropagation();const d=dup;
+if(b.dataset.d=='go'&&d){fm=null;dup=null;sec=d.s;tag='All';quiz=false;unOnly=false;qCur=null;$('q').value=d.it[0];render();window.scrollTo(0,0)}
+else if(b.dataset.d=='any'){allow=true;dup=null;document.querySelector('[data-y=fsave]').click()}
+else{dup=null;render()}return}
+if(b.dataset.g){e.stopImmediatePropagation();const t=items()[fi];if(!t)return;const key=t[0],g=b.dataset.g;
+if(g=='del'){delete MI[key];smi();render()}
+else if(g=='url'){const u=prompt('Paste a direct image link (https://…)');if(u&&/^https?:\/\//.test(u.trim())){MI[key]=u.trim();smi();render()}}
+else{const inp=document.createElement('input');inp.type='file';inp.accept='image/*';inp.onchange=()=>{const f=inp.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,520/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=im.width*k;c.height=im.height*k;c.getContext('2d').drawImage(im,0,0,c.width,c.height);MI[key]=c.toDataURL('image/jpeg',.8);if(!smi())delete MI[key];render()};im.src=r.result};r.readAsDataURL(f)};inp.click()}
+return}
+if(b.dataset.y)dup=null},true);
+document.addEventListener('input',e=>{if(dup&&e.target.dataset.f!==undefined){dup=null;const n=$('dupn');n&&n.remove()}});
+/* ===== Meme pictures: attach your own image to a flashcard ===== */
+let MI={};try{MI=JSON.parse(localStorage.getItem('eng-memeimg')||'{}')}catch(e){}
+const smi=()=>{try{localStorage.setItem('eng-memeimg',JSON.stringify(MI));return true}catch(e){alert('Storage is full. Try a smaller image or use a link.');return false}};
+const r5=render;render=function(){r5();
+if(dup&&fm){const c=$('list').firstElementChild,d=dup,tp=d.it[1];if(c)c.insertAdjacentHTML('afterend',`<div class='res close' id='dupn'><b>⚠️ Already in your list</b><p class='mean'>“${esc(d.it[0])}” is in <b>${esc(D[d.s].label)}</b> (${esc(tp)}): ${esc(d.it[2])}</p><div class='row' style='justify-content:flex-start'><button class='lrn' data-d='go'>👉 Go to it</button><button class='lrn' data-d='any'>Add anyway</button><button class='lrn' data-d='no'>Cancel</button></div></div>`)}
+if(sec=='flash'){const t=items()[fi],c=document.querySelector('#list .meme');if(t&&c){const e=c.querySelector('.emo'),im=MI[t[0]];
+if(im&&e){e.innerHTML=`<img alt='meme' style='max-width:100%;max-height:260px;border-radius:12px'>`;const g=e.firstChild;g.onerror=()=>{e.textContent=t[4]};g.src=im}
+if(e)e.insertAdjacentHTML('afterend',`<div style='display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:6px 0'><button class='lrn' data-g='file'>🖼 Add meme image</button>${im?`<button class='lrn' data-g='del'>✖ Remove</button>`:''}</div>`)}}};
+render();
+</script>
+<script>
+/* ===== Batch 4: content ===== */
+addNew('vocab',P(`abysmal|adj|extremely bad|Abysmal service.
+bleak|adj|empty and grim|A bleak outlook.
+elaborate|adj|detailed and complicated|An elaborate plan.
+frail|adj|weak and delicate|A frail old man.
+haughty|adj|arrogantly proud|A haughty glance.
+impulsive|adj|acting without thinking|An impulsive purchase.
+judicious|adj|showing good judgement|A judicious choice.
+morale|noun|confidence and spirit of a group|Morale was low.
+naive|adj|lacking experience; too trusting|A naive question.
+oblige|verb|require; do a favour for|Law obliges firms to report.
+prestigious|adj|highly respected|A prestigious award.
+robust|adj|strong and healthy|A robust economy.
+swift|adj|very quick|A swift response.
+tranquil|adj|calm and peaceful|A tranquil village.`));
+`abysmal:abysmally adv
+bleak:bleakness n,bleakly adv
+elaborate:elaboration n,elaborately adv,elaborate v
+frail:frailty n,frailly adv
+haughty:haughtiness n,haughtily adv
+impulsive:impulse n,impulsiveness n,impulsively adv
+judicious:judge v,judgement n,judiciously adv,injudicious adj
+morale:demoralise v,demoralised adj,demoralising adj
+naive:naivety n,naively adv
+oblige:obligation n,obligatory adj,obliging adj,obligingly adv
+prestigious:prestige n,prestigiously adv
+robust:robustness n,robustly adv
+swift:swiftness n,swiftly adv
+tranquil:tranquillity n,tranquillise v,tranquilliser n`.split('\n').forEach(l=>{const i=l.indexOf(':');FAMS[l.slice(0,i)]=l.slice(i+1).split(',').filter(Boolean).map(s=>{const j=s.lastIndexOf(' ');return[s.slice(0,j),s.slice(j+1)]})});
+addNew('idioms',[...T3('idiom',`all ears|listening eagerly|Tell me, I’m all ears.
+a blessing in disguise|something bad that turns out good|Losing that job was a blessing in disguise.
+as cool as a cucumber|very calm|She stayed as cool as a cucumber.
+beat the odds|succeed against the odds|The team beat the odds.
+break a leg|good luck (esp. before a performance)|Break a leg tonight!
+by and large|generally|By and large, it went well.
+cry over spilt milk|regret what cannot be changed|No use crying over spilt milk.
+get your act together|organise yourself|Get your act together before the exam.
+go with the flow|accept events calmly|I just go with the flow.
+have a lot on your plate|have much to deal with|She has a lot on her plate.
+hit the ground running|start quickly and effectively|He hit the ground running.
+keep your fingers crossed|hope for good luck|Keep your fingers crossed for me.
+lend a hand|help|Can you lend a hand?
+make or break|decide success or failure|This is a make-or-break match.
+on the verge of|about to|On the verge of tears.
+the last straw|the final problem that ends your patience|Being late again was the last straw.
+speak of the devil|said when a person appears as you talk of them|Speak of the devil, here she is!
+stay on top of|stay in control of|Stay on top of your homework.
+take the bull by the horns|face a problem boldly|Take the bull by the horns.
+a hot potato|a controversial issue nobody wants to handle|Tax is a political hot potato.`),...T3('phrasal verb',`act up|misbehave or malfunction|My laptop is acting up.
+add up|make sense; total|His story doesn’t add up.
+break off|stop suddenly|They broke off the talks.
+brush off|dismiss|She brushed off the criticism.
+count on|rely on|You can count on me.
+die down|become quieter|The noise died down.
+do without|manage without|We can’t do without water.
+drop off|fall asleep; decline|Sales dropped off.
+fall apart|break into pieces; fail|Their plans fell apart.
+find out|discover|Find out the truth.
+get by|manage with difficulty|We get by on little money.
+give away|reveal; donate|He gave away the secret.
+go ahead|proceed|Go ahead and start.
+hang out|spend time relaxing|We hang out on weekends.
+hold up|delay; rob|Traffic held us up.
+lay out|arrange; explain clearly|She laid out the plan.
+line up|arrange in a row|Line up here.
+narrow down|reduce the options|Narrow down the list.
+opt for|choose|I opted for the cheaper one.
+pull out|withdraw|He pulled out of the race.
+sort out|solve; organise|Let’s sort out the problem.
+stick to|keep following|Stick to the schedule.
+take back|retract|I take back what I said.
+turn up|appear; increase|She turned up late.
+weed out|remove what is unsuitable|Weed out weak candidates.
+wear off|gradually disappear|The effect wore off.`)]);
+addNew('prep',T3('preposition',`accuse … of|say someone did wrong|They accused him of lying.
+aim at|try to achieve or hit|The campaign aims at teenagers.
+convert into|change into|Convert dollars into euros.
+distinguish between|see the difference|Distinguish between fact and opinion.
+equivalent to|equal in value|One mile is equivalent to 1.6 km.
+invest in|put money or effort into|Invest in your future.
+participate in|take part in|Participate in class.
+prohibit … from|forbid|Law prohibits minors from driving.
+subject to|depending on; likely to experience|Prices are subject to change.`));
+addNew('grammar',P(`Had better|structure|had better + base = strong advice (no ‘to’); negative: had better not.|You’d better leave now.
+Wish / If only|structure|Present: wish + past simple; past: wish + past perfect; future annoyance: wish + would.|I wish I knew. / If only I had listened.
+Conditionals without if|structure|Supposing, provided, as long as, imagine, otherwise.|Supposing it rains, what then?
+Stative verbs|structure|know, believe, love, own are not normally used in continuous forms.|I know the answer. (not: I am knowing)
+Articles|structure|a/an = first mention; the = specific/known; zero article for general plurals and uncountables.|I saw a dog. The dog was big. Dogs are loyal.`));
+addNew('wf',P(`cultivate|cultivation(n);cultivator(n);cultivated(adj);uncultivated(adj)|A cultivated mind.
+demonstrate|demonstration(n);demonstrator(n);demonstrative(adj);demonstrable(adj);demonstrably(adv)|Demonstrably false.
+emphasise|emphasis(n);emphatic(adj);emphatically(adv)|He emphatically denied it.
+generate|generation(n);generator(n);generative(adj)|A new generation.
+participate|participation(n);participant(n);participatory(adj)|Active participation.
+rely|reliance(n);reliability(n);reliable(adj);reliably(adv);unreliable(adj);reliant(adj)|A reliable source.
+secure|security(n);securely(adv);insecure(adj);insecurity(n)|Job security.
+tradition|traditional(adj);traditionally(adv);traditionalist(n)|A traditional dish.`).map(r=>[r[0],'word family',r[1].split(';').join(' · '),r[2]]));
+addNew('flash',[
+['all ears','idiom','group chat says ‘wait, spill it’, phone down, popcorn out, full attention','me when gossip starts','👂'],
+['hit the ground running','idiom','day one at the new job and already doing everything like a pro, zero lag','day one: already carrying the team','🏃'],
+['go with the flow','idiom','plans changed five times and I just shrugged, zen mode on','vibes over plans','🌊'],
+['a hot potato','idiom','everyone keeps passing the topic along because nobody wants to touch it','pass it. pass it NOW.','🥔'],
+['fall apart','phrasal verb','the plan, the phone, my mood: all in pieces at once','me during finals week','💥'],
+['sort out','phrasal verb','finally fixing the chaos, tidy-up arc, adulting unlocked','adulting: loading','🗂️'],
+['naive','word','believes the ‘only 2 left!’ timer is real, innocent baby energy','trusts every ad','🍼'],
+['robust','word','dropped it, kicked it, rained on it: still works, built different','built different','🛡️'],
+['impulsive','word','added to cart at 3am without thinking, pure vibes','1-click buy at 3am','🛒']]);
+/* ===== Fixes and extras ===== */
+let FC={};try{FC=JSON.parse(localStorage.getItem('eng-fam')||'{}')}catch(e){}Object.assign(FAMS,FC);
+const parseF=s=>s.split(',').map(x=>x.trim()).filter(Boolean).map(x=>{const m=x.match(/^(.*?)\s*\(?\b(n|v|adj|adv)\b\)?$/i);return m?[m[1].trim(),m[2].toLowerCase()]:[x,'']});
+const oRT=renderTree;renderTree=function(L){oRT(L);if(!famOf(fw))L.insertAdjacentHTML('beforeend',`<div class='card'><b>No family saved for “${esc(fw)}” yet</b><p class='cnt'>Add its forms, e.g. <i>decision (n), decisive (adj)</i></p><input class='fi' id='fam-in' placeholder='form (n), form (adj), form (adv)'><button class='lrn' data-fm='1'>Save forms</button></div>`)};
+const cq=document.createElement('button');cq.id='clrQ';cq.textContent='✕';cq.title='Clear search';cq.setAttribute('aria-label','Clear search');$('q').after(cq);
+const bk=document.createElement('button');bk.id='bkBtn';bk.textContent='⬇ Backup';const rs=document.createElement('button');rs.id='rsBtn';rs.textContent='⬆ Restore';$('resetBtn').after(bk,rs);
+window.addEventListener('click',e=>{const t=e.target;
+if(t.closest('#clrQ')){e.stopImmediatePropagation();$('q').value='';qCur=null;render();return}
+if(t.closest('#bkBtn')){e.stopImmediatePropagation();const o={};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k.startsWith('eng-'))o[k]=localStorage.getItem(k)}
+(async()=>{try{const dl=await claude.use('downloads');if(!dl){alert('Saving files is not available here.');return}await dl.save({filename:'english-revision-backup.json',data:new Blob([JSON.stringify(o)],{type:'application/json'})})}catch(x){if(!x||x.code!='declined')alert('Could not save the backup.')}})();return}
+if(t.closest('#rsBtn')){e.stopImmediatePropagation();const i=document.createElement('input');i.type='file';i.accept='.json,application/json';i.onchange=()=>{const f=i.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const o=JSON.parse(r.result);if(!confirm('Replace your current progress and custom items with this backup?'))return;Object.keys(o).filter(k=>k.startsWith('eng-')).forEach(k=>localStorage.setItem(k,o[k]));location.reload()}catch(x){alert('That file is not a valid backup.')}};r.readAsText(f)};i.click();return}
+const m=t.closest('[data-fm]');if(m){e.stopImmediatePropagation();const v=parseF($('fam-in').value);if(v.length){FAMS[fw]=FC[fw]=v;try{localStorage.setItem('eng-fam',JSON.stringify(FC))}catch(x){}render()}return}
+const sv=t.closest('[data-y=fsave]');if(sv&&fm&&fm[0]&&!fm[1]&&tag!='All')fm[1]=tag},true);
+const r6=render;render=function(){r6();cq.style.display=$('q').value?'':'none';
+if(sec=='map'&&!fw)$('cnt').textContent='Showing all '+D.wf.items.length+' word families. Tap any word to see its tree.'};
+render();
+</script>
+<script>
+/* ===== Batch 5: affixes + variations ===== */
+D.affix={label:'🧱 Prefixes & suffixes',items:P(`un-|prefix|not; opposite|unhappy, unfair, undo
+in-|prefix|not (before most letters)|inactive, incorrect, indirect
+im-|prefix|not (before b, m, p)|impossible, immature, impolite
+il-|prefix|not (before l)|illegal, illogical
+ir-|prefix|not (before r)|irregular, irrelevant
+dis-|prefix|not; opposite; apart|disagree, dislike, disconnect
+mis-|prefix|wrongly; badly|misunderstand, misuse, mislead
+non-|prefix|not; without|nonsense, nonfiction
+re-|prefix|again; back|rewrite, rebuild, return
+over-|prefix|too much; above|overwork, overestimate
+under-|prefix|too little; below|underpaid, underestimate
+anti-|prefix|against|antibiotic, anticlimax
+pre-|prefix|before|preview, prehistoric
+post-|prefix|after|postpone, postgraduate
+de-|prefix|reverse; remove|deforest, decode
+inter-|prefix|between|international, interact
+counter-|prefix|against; opposite|counteract, counterproductive
+co-|prefix|together|cooperate, coexist
+en- / em-|prefix|make; put into|enable, empower, endanger
+out-|prefix|beyond; better than|outperform, outgrow
+sub-|prefix|below; under|submarine, subtitle
+super-|prefix|above; beyond|superstar, supervise
+trans-|prefix|across; change|transport, transform
+semi-|prefix|half|semicircle, semifinal
+mal-|prefix|bad; badly|malfunction, malnutrition
+pro-|prefix|for; forward|proactive, promote
+ex-|prefix|former; out|ex-president, export
+hyper-|prefix|extremely; over|hyperactive, hypersensitive
+multi-|prefix|many|multicultural, multitask
+auto-|prefix|self|autobiography, automatic
+-tion / -sion|suffix|noun: action or result|decision, creation, expansion
+-ation|suffix|noun: from verbs in -ise / -ate|organisation, education
+-ment|suffix|noun: result or process|achievement, development
+-ness|suffix|noun: state or quality|kindness, awareness
+-ity|suffix|noun: quality|reality, flexibility
+-ence / -ance|suffix|noun: state or action|difference, importance
+-ship|suffix|noun: state or skill|friendship, leadership
+-ism|suffix|noun: belief or system|realism, tourism
+-ist|suffix|noun: person who does or believes|scientist, optimist
+-er / -or|suffix|noun: person or thing that does|teacher, creator
+-hood|suffix|noun: stage or state|childhood, neighbourhood
+-th|suffix|noun made from an adjective|growth, width, depth
+-ly|suffix|adverb: in a way|quickly, carefully
+-ive|suffix|adjective: tending to|creative, decisive
+-ous|suffix|adjective: full of|dangerous, famous
+-able / -ible|suffix|adjective: can be done|readable, flexible
+-ful|suffix|adjective: full of|helpful, powerful
+-less|suffix|adjective: without|hopeless, careless
+-al / -ial|suffix|adjective: relating to|national, financial
+-ic / -ical|suffix|adjective: relating to|economic, historical
+-ary / -ory|suffix|adjective or noun: relating to|temporary, compulsory
+-y|suffix|adjective: characterised by|rainy, healthy
+-ish|suffix|adjective: somewhat|childish, reddish
+-ise / -ize|suffix|verb: make or become|modernise, realise
+-ify|suffix|verb: make|simplify, clarify
+-en|suffix|verb: make or become|widen, strengthen
+-ate|suffix|verb: cause to|motivate, activate
+-ed / -ing|suffix|participle adjective|excited / exciting
+-ward(s)|suffix|direction|forward, backwards
+-wise|suffix|in the manner of; regarding|clockwise, moneywise`)};
+keys.splice(keys.indexOf('map')+1,0,'affix');
+const PFX=[['counter','against'],['inter','between'],['under','too little / below'],['over','too much'],['super','above'],['trans','across'],['anti','against'],['semi','half'],['hyper','extremely'],['multi','many'],['auto','self'],['sub','below'],['mis','wrongly'],['dis','not / opposite'],['non','not'],['out','beyond'],['pre','before'],['pro','for / forward'],['mal','bad'],['re','again'],['de','reverse'],['co','together'],['en','make'],['em','make'],['il','not'],['im','not'],['ir','not'],['in','not'],['un','not / opposite'],['ex','former / out']].sort((a,b)=>b[0].length-a[0].length);
+const SFX=[['ation','noun: action or result'],['tion','noun: action or result'],['sion','noun: action or result'],['ment','noun: result or process'],['ness','noun: state or quality'],['ity','noun: quality'],['ence','noun: state or action'],['ance','noun: state or action'],['ship','noun: state or skill'],['ism','noun: belief or system'],['ist','noun: person'],['hood','noun: state'],['ly','adverb: in a way'],['ive','adjective: tending to'],['ous','adjective: full of'],['able','adjective: can be done'],['ible','adjective: can be done'],['ful','adjective: full of'],['less','adjective: without'],['ical','adjective: relating to'],['ial','adjective: relating to'],['ic','adjective: relating to'],['al','adjective: relating to'],['ise','verb: make or become'],['ize','verb: make or become'],['ify','verb: make'],['ate','verb: cause to'],['ing','participle / adjective'],['ed','participle / adjective'],['er','noun: person or thing that does'],['or','noun: person or thing that does'],['ant','noun or adjective'],['ent','noun or adjective']].sort((a,b)=>b[0].length-a[0].length);
+const oRT2=renderTree;renderTree=function(L){oRT2(L);
+const fs=(famOf(fw)||[]).map(f=>f[0]),set=[fw,...fs];
+const rows=set.map(w=>{let pre=null,suf=null;
+for(const p of PFX){if(w.startsWith(p[0])){const r=w.slice(p[0].length);if(r.length>=3&&set.some(o=>o!=w&&(o==r||o.startsWith(r.slice(0,Math.min(5,r.length)))))){pre=[p,r];break}}}
+for(const s of SFX){if(w.endsWith(s[0])&&w.length-s[0].length>=3){suf=s;break}}
+if(!pre&&!suf)return'';
+return `<p class='mean'><b>${esc(w)}</b><br><span class='cnt'>${[pre?`<b>${pre[0][0]}-</b> (${pre[0][1]}) + ${esc(pre[1])}`:'',suf?`<b>-${suf[0]}</b> (${suf[1]})`:''].filter(Boolean).join(' &nbsp;·&nbsp; ')}</span></p>`}).join('');
+if(rows)L.insertAdjacentHTML('beforeend',`<div class='card'><b>Prefix &amp; suffix breakdown</b>${rows}<p class='cnt'>See the full list in the 🧱 Prefixes &amp; suffixes tab.</p></div>`)};
+function addForms(h,str){const nf=parseF(str);
+if(FAMS[h]){nf.forEach(f=>{if(!FAMS[h].some(x=>x[0]==f[0]))FAMS[h].push(f)});return}
+const it=D.wf.items.find(t=>t[0]==h);
+if(it){const have=it[2].toLowerCase();nf.forEach(f=>{if(!have.includes(f[0].toLowerCase()+' ')&&!have.includes(f[0].toLowerCase()+'('))it[2]+=' · '+f[0]+' ('+f[1]+')'});return}
+FAMS[h]=nf}
+Object.entries({decide:'undecided adj, decided adj, decidedly adv, indecision n',create:'recreate v, recreation n, uncreative adj',produce:'reproduce v, reproduction n, overproduce v, overproduction n, counterproductive adj, byproduct n',compete:'uncompetitive adj, competitively adv, competent adj',succeed:'unsuccessfully adv, successor n, successive adj',expect:'expectant adj, unexpected adj',employ:'employable adj, unemployable adj, underemployed adj, reemployment n',persuade:'persuader n, unpersuaded adj, persuasiveness n',attract:'attractiveness n, unattractively adv',behave:'misbehaviour n, misbehaved adj',vary:'invariable adj, variably adv, variance n, unvarying adj',depend:'interdependent adj, interdependence n, independence n, independently adv, undependable adj',apply:'reapply v, misapply v, inapplicable adj, applied adj',assess:'reassessment n, misassess v',sense:'nonsense n, insensitive adj, insensitivity n, oversensitive adj, insensible adj',act:'react v, reaction n, reactive adj, interact v, interaction n, enact v, overact v, inaction n, proactive adj, counteract v, transact v',imagine:'unimaginative adj, imaginable adj, unimaginably adv, reimagine v',tolerate:'tolerable adj, tolerably adv, intolerably adv, tolerantly adv',organise:'reorganise v, reorganisation n, unorganised adj, disorganisation n, organisational adj',communicate:'miscommunication n, communicable adj, communicatively adv',inform:'misinform v, misinformation n, uninformed adj, disinformation n, informed adj',explain:'unexplainable adj, explicable adj, inexplicably adv',protect:'overprotect v, overprotective adj, unprotected adj, protectorate n',relate:'correlate v, correlation n, relational adj, interrelate v, interrelated adj',repeat:'unrepeatable adj, repeated adj',satisfy:'dissatisfy v, dissatisfaction n, dissatisfied adj, unsatisfactory adj, satisfying adj',critic:'hypercritical adj, uncritical adj, uncritically adv',educate:'miseducate v, reeducate v, coeducational adj, educated adj',invent:'reinvent v, reinvention n, inventiveness n',courage:'discouragement n, encouraging adj, discouraging adj, encouragingly adv',valid:'invalidate v, invalidation n, invalidity n',exploit:'overexploit v, exploiter n, unexploited adj',integral:'disintegrate v, disintegration n',comprehensive:'incomprehension n, comprehensively adv',sustain:'sustained adj, sustaining adj',legal:'illegal adj, illegally adv, legality n, legalise v, legislation n'}).forEach(([h,s])=>addForms(h,s));
+/* ===== Batch 5: content ===== */
+addNew('vocab',P(`abrupt|adj|sudden and unexpected|An abrupt stop.
+diffident|adj|shy; lacking confidence|A diffident speaker.
+emulate|verb|copy in order to equal|Students emulate their heroes.
+fickle|adj|changing often without reason|Fickle weather.
+grapple|verb|struggle to deal with|Grapple with a problem.
+indifferent|adj|not interested|Indifferent to criticism.
+jovial|adj|cheerful and friendly|A jovial host.
+modest|adj|humble; fairly small|A modest income.
+pioneer|noun|a person who first explores or develops something|A pioneer of aviation.
+rebuke|verb|criticise sharply|She rebuked him for lateness.`));
+`abrupt:abruptness n,abruptly adv
+diffident:diffidence n,diffidently adv
+emulate:emulation n,emulator n
+fickle:fickleness n,fickly adv
+grapple:grapple n
+indifferent:indifference n,indifferently adv,different adj
+jovial:joviality n,jovially adv
+modest:modesty n,modestly adv,immodest adj
+pioneer:pioneer v,pioneering adj
+rebuke:rebuke n`.split('\n').forEach(l=>{const i=l.indexOf(':');FAMS[l.slice(0,i)]=l.slice(i+1).split(',').map(s=>{const j=s.lastIndexOf(' ');return[s.slice(0,j),s.slice(j+1)]})});
+addNew('idioms',[...T3('idiom',`a leopard can’t change its spots|people don’t change their nature|He’ll cheat again; a leopard can’t change its spots.
+add fuel to the fire|make a bad situation worse|His comment added fuel to the fire.
+at stake|at risk|Our jobs are at stake.
+a ballpark figure|a rough estimate|Give me a ballpark figure.
+bring to the table|contribute|What can you bring to the table?
+come clean|confess honestly|He came clean about the mistake.
+a dead end|a route with no progress|The talks reached a dead end.
+get the hang of|learn how to do|I’m getting the hang of it.
+hit the road|leave on a journey|Let’s hit the road.
+in black and white|in writing; very clear|I want it in black and white.
+no strings attached|without conditions|A free gift, no strings attached.
+run of the mill|ordinary|A run-of-the-mill film.
+sleep on it|delay a decision until tomorrow|Let me sleep on it.`),...T3('phrasal verb',`bear with|be patient with|Please bear with me.
+break out|start suddenly (war, fire, disease)|War broke out in 1939.
+check in|register on arrival|We checked in at noon.
+cheer up|become happier|Cheer up!
+dig up|discover or unearth|Reporters dug up the facts.
+get across|communicate clearly|She got her point across.
+hand in|submit|Hand in your essay.
+mix up|confuse|I mixed up the dates.
+pass away|die (politely)|He passed away peacefully.
+put across|express clearly|He puts his ideas across well.
+shut down|close or stop working|The factory shut down.
+stay up|not go to bed|We stayed up all night.
+throw away|discard|Don’t throw away the receipt.`),...T3('collocation',`meet a deadline|complete on time|We met the deadline.
+conduct research|carry out research|They conducted research.
+draw attention to|make people notice|The report draws attention to risks.
+bring about change|cause change|Technology brings about change.
+give rise to|cause|The rumour gave rise to panic.
+play a vital role|be extremely important|Teachers play a vital role.
+raise concerns|cause worry|The plan raised concerns.
+make a decision|decide|It’s time to make a decision.`)]);
+addNew('trans',P(`so as to / in order to|rewrite|Purpose: so that + clause → in order to + base.|He saved money so that he could travel. → He saved money in order to travel.
+neither … nor|rewrite|Join two negatives.|He doesn’t like tea and he doesn’t like coffee. → He likes neither tea nor coffee.
+cleft: It was … who|rewrite|Emphasise one element.|Tom broke the window. → It was Tom who broke the window.
+whose (joining sentences)|rewrite|Join with a relative pronoun.|I met a man. His car was stolen. → I met a man whose car was stolen.`));
+addNew('flash',[
+['add fuel to the fire','idiom','dropping a spicy comment under an already heated argument','me joining the drama','🔥'],
+['sleep on it','idiom','not deciding at 2am, the pillow said wait','‘I’ll tell you tomorrow’','🛌'],
+['run of the mill','idiom','basic, average, plain toast, nothing special','mid. no notes.','🍞'],
+['shut down','phrasal verb','server crashed, game over, everything stopped at once','404 everything','💻'],
+['hand in','phrasal verb','submitted at 11:59pm, heart rate 180','submitted: 11:59 pm','📥'],
+['fickle','word','loves a song for a week then ghosts it forever, changes mind daily','my favourite song: this week only','🦋']]);
+render();
+</script>
+<script>(async()=>{try{const d=await claude.use('downloads');if(!d)$('bkBtn').style.display='none'}catch(e){$('bkBtn').style.display='none'}})();</script></body>
+</html>
